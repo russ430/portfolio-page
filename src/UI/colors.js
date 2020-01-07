@@ -1,4 +1,2 @@
-export const primary = '#31778e'
-
-export const grayMed1 = '#5b6361'
-export const grayDark1 = '#4f5856';
+export const primary = '#0288d1';
+export const white = '#f7f7f7';

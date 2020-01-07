@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProjectBox from './ProjectBox/ProjectBox';
+import * as colors from '../../UI/colors';
 
 const Section = styled.section`
-  background-color: #f7f7f7;
+  background-color: ${colors.white};
   padding: 1rem;
   margin: 0;
 `;
@@ -12,6 +13,7 @@ const Header = styled.h1`
   font-size: 4rem;
   margin: 3rem;
   text-align: center;
+  color: ${colors.primary};
 `;
 
 const ProjectsContainer = styled.div`
