@@ -24,7 +24,7 @@ const ProjectsContainer = styled.div`
 
 const Projects = () => (
   <Section>
-    <Header>Portfolio</Header>
+    <Header id="portfolio">Portfolio</Header>
     <ProjectsContainer>
       <ProjectBox />
       <ProjectBox />

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import alex from '../../img/me-cut-half.png';
 import NavBar from './NavBar/NavBar';
-import Skills from './Skills/Skills';
+import * as colors from '../../UI/colors';
 
 const Section = styled.div`
   width: 100%;
@@ -10,17 +10,19 @@ const Section = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 13rem;
 `;
 
 const HeaderBox = styled.div`
   display: flex;
-  width: 100%;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 5rem;
+  align-items: center;
+  margin: 6rem 0;
+  text-align: center;
 `;
 
 const HeaderText = styled.div`
-  margin-right: 8rem;
   width: 45rem;
 `;
 
@@ -28,7 +30,7 @@ const Title = styled.h1`
   color: white;
   font-size: 7rem;
   letter-spacing: 0.1rem;
-  margin: 4rem 0 4rem 0;
+  margin: 2rem 0;
 `;
 
 const Tagline = styled.h2`
@@ -38,18 +40,27 @@ const Tagline = styled.h2`
   margin: 0;
 `;
 
+const Picture = styled.div`
+  background-image: url(${alex}), linear-gradient(${colors.primary}, ${colors.primaryDark});
+  height: 15rem;
+  width: 15rem;
+  border-radius: 100rem;
+  border: 2px solid white;
+  background-position: 53% 0%;
+  background-repeat: no-repeat;
+`;
+
 const Header = () => (
   <Section>
     <NavBar />
     <HeaderBox>
+      <Picture />
       <HeaderText>
         <Title>Hi, I'm Alex.</Title>
         <Tagline>
-          I'm a Front End Web Developer and Programmer living just outside of Boston, Massachusetts
+          I'm a Front End Developer and Programmer based just outside of Boston, Massachusetts
         </Tagline>
-        <Skills />
       </HeaderText>
-      <img src={alex} alt="Alex Russian" />
     </HeaderBox>
   </Section>
 );
