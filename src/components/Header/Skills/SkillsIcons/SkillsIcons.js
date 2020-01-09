@@ -1,14 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faSass,
-  faHtml5,
-  faCss3Alt,
-  faReact,
-  faGithub,
-  faJs,
-} from '@fortawesome/free-brands-svg-icons';
+import { faSass, faReact, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { ReactComponent as Git } from '../../../../img/bxl-git.svg';
+import { ReactComponent as Redux } from '../../../../img/bxl-redux.svg';
 
 const Icon = styled(FontAwesomeIcon)`
   &:not(:last-child) {
@@ -17,21 +12,6 @@ const Icon = styled(FontAwesomeIcon)`
 `;
 
 const skills = [
-  {
-    skill: 'html',
-    icon: faHtml5,
-    color: '#f16528',
-  },
-  {
-    skill: 'css',
-    icon: faCss3Alt,
-    color: '#3e9bd4',
-  },
-  {
-    skill: 'javascript',
-    icon: faJs,
-    color: '#feda3e',
-  },
   {
     skill: 'sass',
     icon: faSass,
@@ -43,17 +23,32 @@ const skills = [
     color: '#62dafd',
   },
   {
+    skill: 'git',
+    type: 'react',
+    icon: 0,
+    color: '#f54d28',
+  },
+  {
     skill: 'github',
     icon: faGithub,
     color: '#000',
+  },
+  {
+    skill: 'redux',
+    type: 'react',
+    icon: 1,
+    color: '#764abd',
   },
 ];
 
 const SkillsIcons = () => (
   <>
-    {skills.map(s => (
-      <Icon icon={s.icon} size="5x" color={s.color} key={s.skill} />
-    ))}
+    {skills.map(s => {
+      if (s.type === 'react') {
+        return null;
+      }
+      return <Icon icon={s.icon} size="5x" color={s.color} key={s.skill} />;
+    })}
   </>
 );
 

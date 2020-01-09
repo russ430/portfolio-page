@@ -58,7 +58,7 @@ const Header = () => (
       <HeaderText>
         <Title>Hi, I'm Alex.</Title>
         <Tagline>
-          I'm a Front End Developer and Programmer based just outside of Boston, Massachusetts
+          I'm a Front End Developer and Programmer based near Boston, Massachusetts
         </Tagline>
       </HeaderText>
     </HeaderBox>
