@@ -10,8 +10,8 @@ function App() {
     <div style={{ position: 'relative' }}>
       <NavBar />
       <Switch>
-        <Route to="/" component={Home} />
-        <Route to="/about" component={About} />
+        <Route path="/about" component={About} />
+        <Route path="/" component={Home} />
       </Switch>
       <Footer />
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../Header/Header';
+import Header from './Header/Header';
 import WebBox from '../WebBox/WebBox';
 import Projects from '../MyProjects/Projects';
 

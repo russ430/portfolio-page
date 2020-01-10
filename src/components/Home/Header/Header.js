@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import alex from '../../img/me-cut-half.png';
-import * as colors from '../../UI/colors/colors';
+import alex from '../../../img/me-cut-half.png';
+import * as colors from '../../../UI/colors/colors';
 
 const Section = styled.div`
   width: 100%;
@@ -9,7 +9,7 @@ const Section = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 13rem;
+  padding: 10rem 0 13rem 0;
 `;
 
 const HeaderBox = styled.div`
