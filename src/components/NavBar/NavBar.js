@@ -1,9 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../UI/colors/colors';
+import { Link } from 'react-router-dom';
+import * as colors from '../../UI/colors/colors';
 
 const Nav = styled.div`
   padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 `;
 
 const NavList = styled.ul`
@@ -32,10 +37,10 @@ const NavBar = () => (
   <Nav>
     <NavList>
       <NavItem>
-        <a href="#home">Home</a>
+        <Link to="/">Home</Link>
       </NavItem>
       <NavItem>
-        <a href="#about">About</a>
+        <Link to="/about">About</Link>
       </NavItem>
       <NavItem>
         <a href="#portfolio">Portfolio</a>

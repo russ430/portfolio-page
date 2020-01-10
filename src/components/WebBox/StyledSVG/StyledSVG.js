@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Npm, Github, ReactLogo, Sass } from 'styled-icons/fa-brands';
-import { Redux, Git } from 'styled-icons/boxicons-logos';
+import { Npm, ReactLogo, Sass } from 'styled-icons/fa-brands';
+import { Redux, Git, Github } from 'styled-icons/boxicons-logos';
 
 const SVGs = {
   npm: Npm,

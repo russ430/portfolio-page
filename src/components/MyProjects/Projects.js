@@ -6,7 +6,8 @@ import { boxShadowSmall } from '../../UI/boxShadow/boxShadow';
 
 const Section = styled.section`
   background-color: ${colors.white};
-  padding: 1rem;
+  padding: 4rem 0;
+  padding-bottom: 8rem;
   margin: 0;
 `;
 
@@ -20,6 +21,7 @@ const Header = styled.h1`
 
 const ProjectsContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   max-width: 150rem;
   justify-content: space-around;
   margin: 0 auto;
