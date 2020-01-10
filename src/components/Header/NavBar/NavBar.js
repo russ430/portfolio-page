@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../UI/colors';
+import * as colors from '../../../UI/colors/colors';
 
 const Nav = styled.div`
   padding: 1rem;

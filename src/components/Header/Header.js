@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import alex from '../../img/me-cut-half.png';
 import NavBar from './NavBar/NavBar';
-import * as colors from '../../UI/colors';
+import * as colors from '../../UI/colors/colors';
 
 const Section = styled.div`
   width: 100%;
-  background-color: #0288d1;
+  background-color: ${colors.primary};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,9 +57,7 @@ const Header = () => (
       <Picture />
       <HeaderText>
         <Title>Hi, I'm Alex.</Title>
-        <Tagline>
-          I'm a Front End Developer and Programmer based near Boston, Massachusetts
-        </Tagline>
+        <Tagline>I'm a Front End Developer and Programmer based near Boston, Massachusetts</Tagline>
       </HeaderText>
     </HeaderBox>
   </Section>

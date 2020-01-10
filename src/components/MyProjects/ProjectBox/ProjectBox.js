@@ -1,23 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 import project from '../../../img/fake-proj-img.png';
+import { boxShadowSmall } from '../../../UI/boxShadow/boxShadow';
+import * as colors from '../../../UI/colors/colors';
+import alex from '../../../img/me-cut-half.png';
 
 const Container = styled.div`
   display: flex;
   border-radius: 0.3rem;
   flex-direction: column;
-  align-items: center;
   width: 40rem;
   background-color: white;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
-    0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+  box-shadow: ${boxShadowSmall};
   border: 1px solid #e3e3e3;
   overflow: hidden;
 `;
 
 const ProjTitle = styled.h2`
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0;
   padding: 0.5rem;
 `;
@@ -44,10 +44,51 @@ const ProjDescription = styled.p`
   text-align: center;
 `;
 
+const ProjHeader = styled.div`
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+`;
+
+const ProjHeaderName = styled.p`
+  margin-left: 2rem;
+  padding: 0;
+`;
+
+const Picture = styled.div`
+  background-image: url(${alex}), linear-gradient(${colors.primary}, ${colors.primaryDark});
+  height: 3rem;
+  width: 3rem;
+  margin-left: 2rem;
+  border-radius: 100rem;
+  border: 1px solid ${colors.primaryLight};
+  background-position: 53% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
+
+const ProjButtons = styled.div`
+  display: flex;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+`;
+
 const ProjectBox = () => (
   <Container>
+    <ProjHeader>
+      <Picture />
+      <ProjHeaderName>alexRussian</ProjHeaderName>
+    </ProjHeader>
     <ProjImg src={project} alt="Project A" />
-    <ProjTitle>Calculator</ProjTitle>
+    <ProjButtons>
+      <p>Heart</p>
+      <p>Comment</p>
+      <p>Share</p>
+    </ProjButtons>
+    <ProjTitle>alexRussian</ProjTitle>
     <ProjDescription>
       A functional calculator emulator identical to the native iPhone calculator. Flip it to
       landscape mode to see the additional functions!

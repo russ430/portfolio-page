@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Npm, Github, ReactLogo, Sass } from 'styled-icons/fa-brands';
 import { Redux, Git } from 'styled-icons/boxicons-logos';
-// import { ReactComponent as Git } from '../../../img/bxl-git.svg';
-// import { ReactComponent as Redux } from '../../../img/bxl-redux.svg';
 
 const SVGs = {
   npm: Npm,

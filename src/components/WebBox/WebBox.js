@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencilRuler, faCode } from '@fortawesome/free-solid-svg-icons';
-import * as colors from '../../UI/colors';
-import StyledSVG from './StyledSVG/StyledSVG';
+import * as colors from '../../UI/colors/colors';
+import Skills from './Skills/Skills';
+import { boxShadowSmall } from '../../UI/boxShadow/boxShadow';
 
 const Section = styled.div`
   padding: 5rem 0;
@@ -20,10 +21,7 @@ const DevBox = styled.div`
   border-radius: 2rem;
   border: 1px solid #eee;
   margin-top: -12rem;
-  box-shadow: 0 0.6px 1.6px rgba(0, 0, 0, 0.012), 0 1.3px 3.6px rgba(0, 0, 0, 0.017),
-    0 2.3px 6.3px rgba(0, 0, 0, 0.021), 0 3.6px 10px rgba(0, 0, 0, 0.025),
-    0 5.6px 15.5px rgba(0, 0, 0, 0.029), 0 8.7px 24.1px rgba(0, 0, 0, 0.033),
-    0 14.5px 40px rgba(0, 0, 0, 0.038), 0 29px 80px rgba(0, 0, 0, 0.05);
+  box-shadow: ${boxShadowSmall};
 `;
 
 const DevBoxTop = styled.div`
@@ -72,46 +70,6 @@ const Icon = styled(FontAwesomeIcon)`
   margin: 2rem;
 `;
 
-const skills = [
-  {
-    skill: 'git',
-    color: '#f54d28',
-    name: 'Git',
-  },
-  {
-    skill: 'github',
-    color: '#000',
-    name: 'Github',
-  },
-  {
-    skill: 'npm',
-    color: '#c22127',
-    name: 'npm',
-  },
-  {
-    skill: 'react',
-    color: '#62dafd',
-    name: 'React',
-  },
-  {
-    skill: 'redux',
-    color: '#764abd',
-    name: 'Redux',
-  },
-  {
-    skill: 'sass',
-    color: '#f782ac',
-    name: 'Sass',
-  },
-];
-
-const SkillsIcons = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3rem 0;
-`;
-
 const WebBox = () => (
   <Section>
     <DevBox id="about">
@@ -137,11 +95,7 @@ const WebBox = () => (
       </DevBoxTop>
       <DevBoxBottom>
         <Heading>My Design and Development Skills</Heading>
-        <SkillsIcons>
-          {skills.map(s => (
-            <StyledSVG svg={s.skill} color={s.color} name={s.name} />
-          ))}
-        </SkillsIcons>
+        <Skills />
       </DevBoxBottom>
     </DevBox>
   </Section>

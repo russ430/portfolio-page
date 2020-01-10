@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProjectBox from './ProjectBox/ProjectBox';
-import * as colors from '../../UI/colors';
+import * as colors from '../../UI/colors/colors';
 
 const Section = styled.section`
   background-color: ${colors.white};
