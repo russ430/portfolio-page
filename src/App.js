@@ -14,18 +14,3 @@ function App() {
 }
 
 export default App;
-
-// <Card>
-// <Icon icon={faToolbox} size="5x" />
-// <CardHeading>My Dev Tools</CardHeading>
-// <List>
-//   <ListItem>CodePen</ListItem>
-//   <ListItem>Git</ListItem>
-//   <ListItem>Github</ListItem>
-//   <ListItem>Inkscape</ListItem>
-//   <ListItem>Photoshop</ListItem>
-//   <ListItem>React</ListItem>
-//   <ListItem>Redux</ListItem>
-//   <ListItem>Visual Studio Code</ListItem>
-// </List>
-// </Card>
