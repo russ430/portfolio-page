@@ -4,6 +4,7 @@ import axios from 'axios';
 import PageHeader from '../utils/PageHeader/PageHeader';
 import * as colors from '../../UI/colors/colors';
 import { boxShadowSmall } from '../../UI/boxShadow/boxShadow';
+import LoadingSpinner from '../utils/LoadingSpinner/LoadingSpinner';
 
 const Content = styled.div`
   background-color: ${colors.white};
@@ -19,6 +20,12 @@ const Form = styled.form`
   flex-direction: column;
   border-radius: 0.3rem;
   box-shadow: ${boxShadowSmall};
+`;
+
+const FormSubmitted = styled(Form)`
+  min-height: 40rem;
+  text-align: center;
+  align-items: center;
 `;
 
 const Input = styled.input`
@@ -54,6 +61,8 @@ const ContactMe = () => {
   const [nameData, changeNameData] = useState('');
   const [emailData, changeEmailData] = useState('');
   const [messageData, changeMessageData] = useState('');
+  const [messageSent, updateMessageSent] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const onNameChangeHandler = event => {
     changeNameData(event.target.value);
@@ -75,7 +84,7 @@ const ContactMe = () => {
 
   const submitFormHandler = event => {
     event.preventDefault();
-
+    setLoading(true);
     axios({
       method: 'POST',
       url: 'http://localhost:3002/send',
@@ -86,7 +95,8 @@ const ContactMe = () => {
       },
     }).then(response => {
       if (response.data.status === 'success') {
-        alert('Message sent');
+        updateMessageSent(true);
+        setLoading(false);
         resetForm();
       } else if (response.data.status === 'fail') {
         alert('Message failed to send');
@@ -94,28 +104,53 @@ const ContactMe = () => {
     });
   };
 
+  let isLoading = null;
+
+  if (loading === true && messageSent === false) {
+    isLoading = (
+      <FormSubmitted>
+        <LoadingSpinner />
+      </FormSubmitted>
+    );
+  }
+
+  let form = null;
+
+  if (messageSent === true && loading === false) {
+    form = (
+      <FormSubmitted>
+        <h1 style={{ fontWeight: '400' }}>
+          Thank you for reaching out to me! I'll be sure to get back to you as soon as I see your
+          message.
+        </h1>
+      </FormSubmitted>
+    );
+  } else if (messageSent === false && loading === true) {
+    form = null;
+  } else {
+    form = (
+      <Form>
+        <Label Htmlfor="name">Name</Label>
+        <Input type="text" id="name" value={nameData} onChange={e => onNameChangeHandler(e)} />
+        <Label Htmlfor="email">Email</Label>
+        <Input type="email" id="email" value={emailData} onChange={e => onEmailChangeHandler(e)} />
+        <Label Htmlfor="message">Message</Label>
+        <TextArea id="message" value={messageData} onChange={e => onMessageChangeHandler(e)} />
+        <Button type="submit" onClick={submitFormHandler}>
+          Submit
+        </Button>
+      </Form>
+    );
+  }
+
   return (
     <>
       <PageHeader subHeading="Please fill out the form below and I will get back to you within 48 hours">
         Contact Me
       </PageHeader>
       <Content>
-        <Form>
-          <Label Htmlfor="name">Name</Label>
-          <Input type="text" id="name" value={nameData} onChange={e => onNameChangeHandler(e)} />
-          <Label Htmlfor="email">Email</Label>
-          <Input
-            type="email"
-            id="email"
-            value={emailData}
-            onChange={e => onEmailChangeHandler(e)}
-          />
-          <Label Htmlfor="message">Message</Label>
-          <TextArea id="message" value={messageData} onChange={e => onMessageChangeHandler(e)} />
-          <Button type="submit" onClick={submitFormHandler}>
-            Submit
-          </Button>
-        </Form>
+        {form}
+        {isLoading}
       </Content>
     </>
   );
