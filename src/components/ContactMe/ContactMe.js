@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import axios from 'axios';
 import PageHeader from '../utils/PageHeader/PageHeader';
 import * as colors from '../../UI/colors/colors';
 import { boxShadowSmall } from '../../UI/boxShadow/boxShadow';
@@ -46,23 +47,78 @@ const Button = styled.button`
   padding: 1rem 2rem;
   color: ${colors.white};
   margin: 1rem 0;
+  align-self: flex-start;
 `;
 
-const ContactMe = () => (
-  <>
-    <PageHeader subHeading="Please fill out the form below and I will get back to you within 48 hours">Contact Me</PageHeader>
-    <Content>
-      <Form>
-        <Label>Name</Label>
-        <Input type="text" />
-        <Label>Email</Label>
-        <Input type="email" />
-        <Label>Message</Label>
-        <TextArea />
-        <Button type="submit">Submit</Button>
-      </Form>
-    </Content>
-  </>
-);
+const ContactMe = () => {
+  const [nameData, changeNameData] = useState('');
+  const [emailData, changeEmailData] = useState('');
+  const [messageData, changeMessageData] = useState('');
+
+  const onNameChangeHandler = event => {
+    changeNameData(event.target.value);
+  };
+
+  const onEmailChangeHandler = event => {
+    changeEmailData(event.target.value);
+  };
+
+  const onMessageChangeHandler = event => {
+    changeMessageData(event.target.value);
+  };
+
+  const resetForm = () => {
+    changeNameData('');
+    changeEmailData('');
+    changeMessageData('');
+  };
+
+  const submitFormHandler = event => {
+    event.preventDefault();
+
+    axios({
+      method: 'POST',
+      url: 'http://localhost:3002/send',
+      data: {
+        name: nameData,
+        email: emailData,
+        message: messageData,
+      },
+    }).then(response => {
+      if (response.data.status === 'success') {
+        alert('Message sent');
+        resetForm();
+      } else if (response.data.status === 'fail') {
+        alert('Message failed to send');
+      }
+    });
+  };
+
+  return (
+    <>
+      <PageHeader subHeading="Please fill out the form below and I will get back to you within 48 hours">
+        Contact Me
+      </PageHeader>
+      <Content>
+        <Form>
+          <Label Htmlfor="name">Name</Label>
+          <Input type="text" id="name" value={nameData} onChange={e => onNameChangeHandler(e)} />
+          <Label Htmlfor="email">Email</Label>
+          <Input
+            type="email"
+            id="email"
+            value={emailData}
+            onChange={e => onEmailChangeHandler(e)}
+          />
+          <Label Htmlfor="message">Message</Label>
+          <TextArea id="message" value={messageData} onChange={e => onMessageChangeHandler(e)} />
+          <Button type="submit" onClick={submitFormHandler}>
+            Submit
+          </Button>
+        </Form>
+      </Content>
+    </>
+  );
+};
 
 export default ContactMe;

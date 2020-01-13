@@ -36,7 +36,9 @@ const AboutSubHeading = styled.h3`
 
 const About = () => (
   <>
-    <PageHeader>About Me</PageHeader>
+    <PageHeader subHeading="A quick bit about who I am and what it's like working with me">
+      About Me
+    </PageHeader>
     <AboutMe>
       <AboutBox>
         <AboutHeading>Who I am</AboutHeading>
@@ -55,10 +57,9 @@ const About = () => (
         </AboutMeText>
         <AboutSubHeading>Beyond Development</AboutSubHeading>
         <AboutMeText>
-          Outside of web development I'm incredibly passionate about all things Boston sports. I
-          also enjoy competing in regional amateur golf tournaments around Massachusetts.
-          Occasionally you can find me ambulating for an extended period of time on vast oceanfronts
-          of tiny pieces of sediment.
+          Outside of web development I'm incredibly passionate about all things Boston sports. I'm
+          also a very competitive golfer and enjoy competing in local amateur tournaments around
+          Massachusetts. If I'm not behind a computer screen I'm probabaly on a golf course!
         </AboutMeText>
       </AboutBox>
     </AboutMe>

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Github, LinkedinSquare } from 'styled-icons/boxicons-logos';
 import { Email } from 'styled-icons/material';
+import { Link } from 'react-router-dom';
 import * as colors from '../../UI/colors/colors';
 
 const Section = styled.footer`
@@ -27,11 +28,17 @@ const NavBar = styled.ul`
   text-align: center;
 `;
 
-const NavItem = styled.li`
+const NavItem = styled(Link)`
   color: white;
   padding: 0;
   margin: 0 1rem;
   font-size: 1.8rem;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const Copyright = styled.div`
@@ -54,10 +61,10 @@ const Footer = () => (
       <Email size="45" style={{ color: 'white', margin: '0 0.5rem' }} />
     </Icons>
     <NavBar>
-      <NavItem>Home</NavItem>
-      <NavItem>About</NavItem>
-      <NavItem>Portfolio</NavItem>
-      <NavItem>Contact Me</NavItem>
+      <NavItem to="/">Home</NavItem>
+      <NavItem to="/about">About</NavItem>
+      <NavItem to="/portfolio">Portfolio</NavItem>
+      <NavItem to="contactme">Contact Me</NavItem>
     </NavBar>
     <Copyright>
       <CopyrightText>Copyright © 2020 Alex Russian</CopyrightText>
