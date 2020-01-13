@@ -46,7 +46,7 @@ const NavBar = () => (
         <Link to="/portfolio">Portfolio</Link>
       </NavItem>
       <NavItem>
-        <Link to="/contact">Contact Me</Link>
+        <Link to="/contactme">Contact Me</Link>
       </NavItem>
     </NavList>
   </Nav>

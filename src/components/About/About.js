@@ -2,19 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import * as colors from '../../UI/colors/colors';
 import { boxShadowSmall } from '../../UI/boxShadow/boxShadow';
-
-const Header = styled.header`
-  padding: 13rem 0;
-  background-color: ${colors.primary};
-`;
-
-const MainHeading = styled.h1`
-  padding: 0;
-  margin: 0;
-  font-size: 7rem;
-  color: ${colors.white};
-  text-align: center;
-`;
+import PageHeader from '../utils/PageHeader/PageHeader';
 
 const AboutMe = styled.section`
   padding: 2rem 0 4rem 0;
@@ -48,9 +36,7 @@ const AboutSubHeading = styled.h3`
 
 const About = () => (
   <>
-    <Header>
-      <MainHeading>About Me</MainHeading>
-    </Header>
+    <PageHeader>About Me</PageHeader>
     <AboutMe>
       <AboutBox>
         <AboutHeading>Who I am</AboutHeading>
