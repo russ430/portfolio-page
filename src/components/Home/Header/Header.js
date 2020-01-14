@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import alex from '../../../img/me-cut-half.png';
 import * as colors from '../../../UI/colors/colors';
+import Button from '../../../utils/Button/Button';
 
 const Section = styled.div`
   width: 100%;
@@ -60,6 +62,9 @@ const Header = () => (
         </Tagline>
       </HeaderText>
     </HeaderBox>
+    <Link to="/contactme">
+      <Button>Work With Me</Button>
+    </Link>
   </Section>
 );
 

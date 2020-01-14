@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
-import PageHeader from '../utils/PageHeader/PageHeader';
+import PageHeader from '../../utils/PageHeader/PageHeader';
 import * as colors from '../../UI/colors/colors';
 import { boxShadowSmall } from '../../UI/boxShadow/boxShadow';
-import LoadingSpinner from '../utils/LoadingSpinner/LoadingSpinner';
+import LoadingSpinner from '../../utils/LoadingSpinner/LoadingSpinner';
 
 const Content = styled.div`
   background-color: ${colors.white};
   overflow: hidden;
+  padding: 5rem 0;
 `;
 
 const Form = styled.form`
@@ -145,7 +146,7 @@ const ContactMe = () => {
 
   return (
     <>
-      <PageHeader subHeading="Please fill out the form below and I will get back to you within 48 hours">
+      <PageHeader subHeading="I look forward to hearing from you! I'll do my best to get back to you within 48 hours or less.">
         Contact Me
       </PageHeader>
       <Content>

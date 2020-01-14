@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../UI/colors/colors';
+import * as colors from '../../UI/colors/colors';
 
 const Header = styled.header`
   padding: 13rem 0 11rem 0;
@@ -16,7 +16,7 @@ const Heading = styled.h1`
 `;
 
 const SubHeading = styled.h2`
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: ${colors.white};
   font-weight: 400;
   text-align: center;

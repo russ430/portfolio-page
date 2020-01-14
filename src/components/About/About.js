@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import * as colors from '../../UI/colors/colors';
 import { boxShadowSmall } from '../../UI/boxShadow/boxShadow';
-import PageHeader from '../utils/PageHeader/PageHeader';
+import PageHeader from '../../utils/PageHeader/PageHeader';
 
 const AboutMe = styled.section`
   padding: 2rem 0 4rem 0;
@@ -36,7 +36,7 @@ const AboutSubHeading = styled.h3`
 
 const About = () => (
   <>
-    <PageHeader subHeading="A quick bit about who I am and what it's like working with me">
+    <PageHeader subHeading="A quick bit about who I am and why you should work with me.">
       About Me
     </PageHeader>
     <AboutMe>
