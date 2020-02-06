@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import PageHeader from '../../utils/PageHeader/PageHeader';
 import * as colors from '../../UI/colors/colors';
+import Vanderveer from '../../assets/img/vm-desktop.png';
+import StyledSVG from '../../utils/StyledSVG/StyledSVG';
 
 const Content = styled.div`
   background-color: ${colors.white};
@@ -9,91 +11,110 @@ const Content = styled.div`
   padding: 5rem 0;
 `;
 
-const ProjectsBox = styled.div`
-  max-width: 105rem;
+const Projects = styled.div`
+  max-width: 120rem;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
 `;
 
 const Project = styled.div`
   display: flex;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid #ddd;
 `;
 
-const ProjectImg = styled.div`
+const Left = styled.div`
+  flex: 2;
+`;
+
+const Figure = styled.figure`
+  padding: 2rem;
+`;
+
+const Img = styled.img`
+  width: 100%;
+`;
+
+const Right = styled.div`
   flex: 1;
-  background-color: lightblue;
+  padding: 2rem;
 `;
 
-const ProjectDescrip = styled.div`
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  background-color: lightgreen;
-  padding: 1rem;
-`;
-
-const ProjectHeading = styled.h2`
-  font-size: 3rem;
+const Heading = styled.h1`
+  font-size: 2.5rem;
+  font-weight: 500;
   color: ${colors.primary};
-  margin: 1rem 0;
 `;
 
-const ProjectText = styled.p`
-  font-size: 2rem;
-  margin: 0;
-  padding: 0;
+const Description = styled.p`
+  font-size: 1.5rem;
+  color: ${colors.black};
+  margin: 4rem 0;
 `;
 
-const List = styled.ul`
+const SkillsList = styled.ul`
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 3rem 0;
 `;
 
-const ListItem = styled.li`
-  list-style: none;
-  margin: 0;
-  padding: 0;
+const Skill = styled.li`
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+`;
+
+const Button = styled.button`
+  font-size: 1.5rem;
+  background-color: ${colors.primary};
+  border: 1px solid ${colors.primary};
+  border-radius: 3rem;
+  color: ${colors.white};
+  padding: 1rem 2rem;
+  margin-top: 4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: ${colors.white};
+    transform: scale(1.1);
+    color: ${colors.primary};
+  }
 `;
 
 const Portfolio = () => (
   <>
-    <PageHeader subHeading="Check out some of my completed projects below.">Portfolio</PageHeader>
+    <PageHeader subHeading="See some of my work below">Portfolio</PageHeader>
     <Content>
-      <ProjectsBox>
+      <Projects>
         <Project>
-          <ProjectImg>This is an image</ProjectImg>
-          <ProjectDescrip>
-            <ProjectHeading>Vanderveer Motors</ProjectHeading>
-            <ProjectText>
-              A responsive, interactive website created for a local mechanic's repair shop. It is a
-              single-page application made to feel like a multi-page website. Includes a custom-made
-              appointment scheduler built to send confirmation emails to the mechanic and the
-              customer when an appointment has been made.
-            </ProjectText>
-            <List>
-              <ListItem>Responsive</ListItem>
-              <ListItem>Mobile-first</ListItem>
-              <ListItem>Github Repo</ListItem>
-            </List>
-          </ProjectDescrip>
+          <Left>
+            <Figure>
+              <Img src={Vanderveer} alt="Vanderveer Motors Home Page" />
+            </Figure>
+          </Left>
+          <Right>
+            <Heading>Vanderveer Motors</Heading>
+            <Description>
+              A multi-page website created and hosted on WordPress. Fully responsive across all
+              devices and cross-browser compatible. Includes email-based contact/message form and
+              Google Maps integration.
+            </Description>
+            <SkillsList>
+              <Skill>
+                <StyledSVG svg="wordpress" size="30" color="#21759a" />
+                Wordpress
+              </Skill>
+              <Skill>
+                <StyledSVG svg="responsive" size="30" color="#000" />
+                Responsive
+              </Skill>
+              <a href="http://www.vanderveermotors.com">
+                <Button>See it live</Button>
+              </a>
+            </SkillsList>
+          </Right>
         </Project>
-        <Project>
-          <ProjectImg>This is an image</ProjectImg>
-          <ProjectDescrip>
-            <ProjectHeading>Project 2</ProjectHeading>
-            <ProjectText>This is a description</ProjectText>
-          </ProjectDescrip>
-        </Project>
-        <Project>
-          <ProjectImg>This is an image</ProjectImg>
-          <ProjectDescrip>
-            <ProjectHeading>Project 2</ProjectHeading>
-            <ProjectText>This is a description</ProjectText>
-          </ProjectDescrip>
-        </Project>
-      </ProjectsBox>
+      </Projects>
     </Content>
   </>
 );

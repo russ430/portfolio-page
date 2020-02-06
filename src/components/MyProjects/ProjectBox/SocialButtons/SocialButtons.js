@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Heart } from 'styled-icons/feather';
-import { ReactComponent as Plane } from '../../../../img/plane.svg';
+import { ReactComponent as Plane } from '../../../../assets/svg/plane.svg';
 
 const Container = styled.div`
   display: flex;

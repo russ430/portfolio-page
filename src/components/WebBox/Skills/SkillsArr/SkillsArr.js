@@ -29,6 +29,11 @@ const skillsArr = [
     color: '#f782ac',
     name: 'Sass',
   },
+  {
+    skill: 'wordpress',
+    color: '#21759a',
+    name: 'Wordpress',
+  }
 ];
 
 export default skillsArr;

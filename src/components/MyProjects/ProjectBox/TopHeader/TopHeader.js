@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import alex from '../../../../img/me-cut-half.png';
+import alex from '../../../../assets/img/me-cut-half.png';
 import * as colors from '../../../../UI/colors/colors';
 
 const Container = styled.div`

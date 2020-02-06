@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import StyledSVG from '../StyledSVG/StyledSVG';
+import StyledSVG from '../../../utils/StyledSVG/StyledSVG';
 import skillsArr from './SkillsArr/SkillsArr';
 
 const SkillsIcons = styled.div`
@@ -13,7 +13,7 @@ const SkillsIcons = styled.div`
 const Skills = () => (
   <SkillsIcons>
     {skillsArr.map(s => (
-      <StyledSVG svg={s.skill} color={s.color} name={s.name} key={s.name} />
+      <StyledSVG size="70" svg={s.skill} color={s.color} name={s.name} key={s.name} />
     ))}
   </SkillsIcons>
 );

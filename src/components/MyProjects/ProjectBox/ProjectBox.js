@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import project from '../../../img/fake-proj-img.png';
+import project from '../../../assets/img/fake-proj-img.png';
 import { boxShadowSmall } from '../../../UI/boxShadow/boxShadow';
 import TopHeader from './TopHeader/TopHeader';
 import SocialButtons from './SocialButtons/SocialButtons';
