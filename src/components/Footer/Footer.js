@@ -56,10 +56,14 @@ const CopyrightText = styled.p`
 const Footer = () => (
   <Section>
     <Icons>
-      <a href="www.linkedin.com/in/alex-russian-ajr111/" target="_blank">
+      <a
+        href="http://www.linkedin.com/in/alex-russian-ajr111/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <LinkedinSquare size="45" style={{ color: 'white', margin: '0 0.5rem' }} />
       </a>
-      <a href="www.github.com/russ430/">
+      <a href="http://www.github.com/russ430/" target="_blank" rel="noopener noreferrer">
         <Github size="45" style={{ color: 'white', margin: '0 0.5rem' }} />
       </a>
       <Link to="/contactme">

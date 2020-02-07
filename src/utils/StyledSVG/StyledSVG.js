@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Npm, ReactLogo, Sass, Wordpress } from 'styled-icons/fa-brands';
-import { Redux, Git, Github } from 'styled-icons/boxicons-logos';
+import { Redux, Git, Github, Nodejs } from 'styled-icons/boxicons-logos';
 import { Phonelink } from 'styled-icons/material/Phonelink';
 
 const SVGs = {
@@ -13,6 +13,7 @@ const SVGs = {
   git: Git,
   wordpress: Wordpress,
   responsive: Phonelink,
+  nodejs: Nodejs,
 };
 
 const SVG = styled.div`

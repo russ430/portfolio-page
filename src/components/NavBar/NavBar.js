@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import * as colors from '../../UI/colors/colors';
+import { NavLink } from 'react-router-dom';
 
 const Nav = styled.div`
   padding: 1rem;
@@ -24,11 +23,12 @@ const NavItem = styled.li`
   a {
     text-decoration: none;
     color: #fff;
+    border-bottom: 1px solid transparent;
     cursor: pointer;
-    transition: color 0.2s ease;
+    transition: all 0.2s ease;
 
     &:hover {
-      color: ${colors.primaryLight};
+      border-bottom: 1px solid white;
     }
   }
 `;
@@ -37,16 +37,24 @@ const NavBar = () => (
   <Nav>
     <NavList>
       <NavItem>
-        <Link to="/">Home</Link>
+        <NavLink exact to="/" activeStyle={{ borderBottom: '1px solid white' }}>
+          Home
+        </NavLink>
       </NavItem>
       <NavItem>
-        <Link to="/about">About</Link>
+        <NavLink to="/about" activeStyle={{ borderBottom: '1px solid white' }}>
+          About
+        </NavLink>
       </NavItem>
       <NavItem>
-        <Link to="/portfolio">Portfolio</Link>
+        <NavLink to="/portfolio" activeStyle={{ borderBottom: '1px solid white' }}>
+          Portfolio
+        </NavLink>
       </NavItem>
       <NavItem>
-        <Link to="/contactme">Contact Me</Link>
+        <NavLink to="/contactme" activeStyle={{ borderBottom: '1px solid white' }}>
+          Contact Me
+        </NavLink>
       </NavItem>
     </NavList>
   </Nav>

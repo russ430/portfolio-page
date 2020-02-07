@@ -10,6 +10,11 @@ const skillsArr = [
     name: 'Github',
   },
   {
+    skill: 'nodejs',
+    color: '#395336',
+    name: 'NodeJs',
+  },
+  {
     skill: 'npm',
     color: '#c22127',
     name: 'npm',
@@ -33,7 +38,7 @@ const skillsArr = [
     skill: 'wordpress',
     color: '#21759a',
     name: 'Wordpress',
-  }
+  },
 ];
 
 export default skillsArr;

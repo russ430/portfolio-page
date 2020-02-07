@@ -31,6 +31,7 @@ const DevBoxTop = styled.div`
 
 const DevBoxBottom = styled.div`
   text-align: center;
+  padding: 4rem 0;
 `;
 
 const Card = styled.div`
