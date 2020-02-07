@@ -39,6 +39,10 @@ const NavItem = styled(Link)`
   &:hover {
     text-decoration: underline;
   }
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Copyright = styled.div`

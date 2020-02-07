@@ -34,7 +34,7 @@ const projects = [
       alt: 'Basic Weather App project',
     },
     description:
-      "A full-stack single page weather application built with React on the front end, NodeJs on the back end and deployed on Heroku. Weather data is retrieved from OpenWeather's API.",
+      "A full-stack single page weather application built with React on the front end and NodeJs on the back end, deployed on Heroku. Weather data is retrieved from OpenWeather's API.",
     svgs: [
       {
         svg: 'nodejs',

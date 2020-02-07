@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import * as colors from '../../UI/colors/colors';
 
 const Nav = styled.div`
   padding: 1rem;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  background-color: ${colors.primary};
+  display: block;
+  text-align: center;
 `;
 
 const NavList = styled.ul`
@@ -30,6 +30,10 @@ const NavItem = styled.li`
     &:hover {
       border-bottom: 1px solid white;
     }
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    font-size: 1.5rem;
   }
 `;
 

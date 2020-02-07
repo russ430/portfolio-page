@@ -8,6 +8,10 @@ const SkillsIcons = styled.div`
   justify-content: center;
   align-items: center;
   margin: 3rem 0 1rem 0;
+
+  @media screen and (min-width: 365px) {
+    flex-wrap: wrap;
+  }
 `;
 
 const Skills = () => (

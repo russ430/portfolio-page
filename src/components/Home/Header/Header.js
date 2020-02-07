@@ -6,12 +6,15 @@ import * as colors from '../../../UI/colors/colors';
 import Button from '../../../utils/Button/Button';
 
 const Section = styled.div`
-  width: 100%;
   background-color: ${colors.primary};
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10rem 0 13rem 0;
+  padding: 7rem 0 13rem 0;
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    padding: 4rem 0 6rem 0;
+  }
 `;
 
 const HeaderBox = styled.div`
@@ -21,10 +24,14 @@ const HeaderBox = styled.div`
   align-items: center;
   margin: 6rem 0;
   text-align: center;
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    margin: 2rem 0;
+  }
 `;
 
 const HeaderText = styled.div`
-  width: 45rem;
+  max-width: 45rem;
 `;
 
 const Title = styled.h1`
@@ -32,6 +39,10 @@ const Title = styled.h1`
   font-size: 7rem;
   letter-spacing: 0.1rem;
   margin: 2rem 0;
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    font-size: 5rem;
+  }
 `;
 
 const Tagline = styled.h2`

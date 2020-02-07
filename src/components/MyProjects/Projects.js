@@ -2,13 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import ProjectBox from './ProjectBox/ProjectBox';
 import * as colors from '../../UI/colors/colors';
-import { boxShadowSmall } from '../../UI/boxShadow/boxShadow';
 
 const Section = styled.section`
   background-color: ${colors.white};
   padding: 4rem 0;
   padding-bottom: 8rem;
   margin: 0;
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    background-color: ${colors.greyLight};
+  }
 `;
 
 const Header = styled.h1`
@@ -16,7 +19,6 @@ const Header = styled.h1`
   margin: 3rem 0 5rem 0;
   text-align: center;
   color: ${colors.primary};
-  text-shadow: ${boxShadowSmall};
 `;
 
 const ProjectsContainer = styled.div`

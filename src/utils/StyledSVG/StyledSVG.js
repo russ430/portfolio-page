@@ -21,6 +21,10 @@ const SVG = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 0 1.5rem;
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    margin: 1rem 1.5rem;
+  }
 `;
 
 const Name = styled.p`

@@ -10,6 +10,10 @@ const Section = styled.div`
   padding: 5rem 0;
   background-color: ${colors.white};
   position: relative;
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    padding: 0;
+  }
 `;
 
 const DevBox = styled.div`
@@ -22,16 +26,31 @@ const DevBox = styled.div`
   border: 1px solid #eee;
   margin-top: -12rem;
   box-shadow: ${boxShadowSmall};
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    margin-top: 0;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+  }
 `;
 
 const DevBoxTop = styled.div`
   display: flex;
   border-bottom: 1px solid #eee;
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    flex-direction: column;
+  }
 `;
 
 const DevBoxBottom = styled.div`
   text-align: center;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    border-bottom: 1px solid #eee;
+  }
 `;
 
 const Card = styled.div`
@@ -44,12 +63,25 @@ const Card = styled.div`
   &:not(:last-child) {
     border-right: 1px solid #eee;
   }
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    padding: 2rem;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #eee;
+      border-right: none;
+    }
+  }
 `;
 
 const Heading = styled.h3`
   font-size: 2.7rem;
   letter-spacing: 0.1rem;
   margin-bottom: 2rem;
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const CardBody = styled.p`
@@ -57,6 +89,10 @@ const CardBody = styled.p`
   text-align: center;
   letter-spacing: 0.03rem;
   margin: 1rem 0;
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const CardSubHeading = styled.h4`
@@ -64,6 +100,10 @@ const CardSubHeading = styled.h4`
   letter-spacing: 0.07rem;
   margin-bottom: 0.5rem;
   color: ${colors.primary};
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    font-size: 1.9rem;
+  }
 `;
 
 const Icon = styled(FontAwesomeIcon)`

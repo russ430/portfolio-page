@@ -18,6 +18,10 @@ const Btn = styled.button`
     border: 1px solid ${colors.white};
     color: ${colors.white};
   }
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    margin: 2rem 0;
+  }
 `;
 
 const Button = props => <Btn type="button">{props.children}</Btn>;
