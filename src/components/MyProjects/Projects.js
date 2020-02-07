@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ProjectBox from './ProjectBox/ProjectBox';
 import * as colors from '../../UI/colors/colors';
 import projectsArr from '../Portfolio/Projects/projectsArr/projectsArr';
+import Button from '../../utils/Button/Button';
 
 const Section = styled.section`
   background-color: ${colors.white};
@@ -49,6 +50,11 @@ const Projects = () => {
           );
         })}
       </ProjectsContainer>
+      <div style={{ textAlign: 'center', marginTop: '5rem' }}>
+        <a href="/portfolio" rel="noreferrer noopener">
+          <Button color="primary">See more of my Work</Button>
+        </a>
+      </div>
     </Section>
   );
 };
