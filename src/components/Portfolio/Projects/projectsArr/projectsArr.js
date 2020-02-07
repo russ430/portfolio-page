@@ -39,6 +39,7 @@ const projects = [
       "A full stack single page weather application built with React on the front end and NodeJs on the back end, deployed on Heroku. Weather data is retrieved from OpenWeather's API.",
     caption:
       "A full stack weather application built with React and NodeJs. I used OpenWeather's API to fetch all the current and future weather data.",
+    github: 'https://www.github.com/russ430/basic-weather',
     svgs: [
       {
         svg: 'nodejs',
@@ -58,12 +59,6 @@ const projects = [
         color: '#000',
         size: '30',
       },
-      {
-        svg: 'github',
-        name: 'Github Repository',
-        color: '#000',
-        size: '30',
-      },
     ],
     link: 'https://alexs-basic-weather-app.herokuapp.com/',
   },
@@ -77,6 +72,7 @@ const projects = [
       'A simple credit card form built with React and Sass, deployed on Netlify. Shows card interactions when the user enters in their info.',
     caption:
       'A basic credit card form built with some cool interactions as the user types in their info. Built with React and Sass!',
+    github: 'https://github.com/russ430/card-validation',
     svgs: [
       {
         svg: 'react',
@@ -93,12 +89,6 @@ const projects = [
       {
         svg: 'responsive',
         name: 'Responsive',
-        color: '#000',
-        size: '30',
-      },
-      {
-        svg: 'github',
-        name: 'Github Repository',
         color: '#000',
         size: '30',
       },

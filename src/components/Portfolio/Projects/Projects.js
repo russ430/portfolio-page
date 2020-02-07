@@ -115,9 +115,19 @@ const Projects = () => (
                   </Skill>
                 );
               })}
+              {p.github && (
+                <Skill>
+                  <StyledSVG svg="github" color="#000" size="30" />
+                  <a href={p.github} rel="noreferrer noopener">
+                    Github Repo
+                  </a>
+                </Skill>
+              )}
             </SkillsList>
             <a href={p.link} target="_blank" rel="noreferrer noopener">
-              <Button color="primary" size="small">See it live</Button>
+              <Button color="primary" size="small">
+                See it live
+              </Button>
             </a>
           </Right>
         </Project>
