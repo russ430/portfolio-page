@@ -57,33 +57,47 @@ const CopyrightText = styled.p`
   margin: 0;
 `;
 
-const Footer = () => (
-  <Section>
-    <Icons>
-      <a
-        href="http://www.linkedin.com/in/alex-russian-ajr111/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <LinkedinSquare size="45" style={{ color: 'white', margin: '0 0.5rem' }} />
-      </a>
-      <a href="http://www.github.com/russ430/" target="_blank" rel="noopener noreferrer">
-        <Github size="45" style={{ color: 'white', margin: '0 0.5rem' }} />
-      </a>
-      <Link to="/contactme">
-        <Email size="45" style={{ color: 'white', margin: '0 0.5rem' }} />
-      </Link>
-    </Icons>
-    <NavBar>
-      <NavItem to="/">Home</NavItem>
-      <NavItem to="/about">About</NavItem>
-      <NavItem to="/portfolio">Portfolio</NavItem>
-      <NavItem to="contactme">Contact Me</NavItem>
-    </NavBar>
-    <Copyright>
-      <CopyrightText>Copyright © 2020 Alex Russian</CopyrightText>
-    </Copyright>
-  </Section>
-);
+const Footer = () => {
+  const navClickHandler = () => {
+    window.scrollTo(0, 0);
+  };
+
+  return (
+    <Section>
+      <Icons>
+        <a
+          href="http://www.linkedin.com/in/alex-russian-ajr111/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedinSquare size="45" style={{ color: 'white', margin: '0 0.5rem' }} />
+        </a>
+        <a href="http://www.github.com/russ430/" target="_blank" rel="noopener noreferrer">
+          <Github size="45" style={{ color: 'white', margin: '0 0.5rem' }} />
+        </a>
+        <Link to="/contactme">
+          <Email size="45" style={{ color: 'white', margin: '0 0.5rem' }} />
+        </Link>
+      </Icons>
+      <NavBar>
+        <NavItem to="/" onClick={navClickHandler}>
+          Home
+        </NavItem>
+        <NavItem to="/about" onClick={navClickHandler}>
+          About
+        </NavItem>
+        <NavItem to="/portfolio" onClick={navClickHandler}>
+          Portfolio
+        </NavItem>
+        <NavItem to="contactme" onClick={navClickHandler}>
+          Contact Me
+        </NavItem>
+      </NavBar>
+      <Copyright>
+        <CopyrightText>Copyright © 2020 Alex Russian</CopyrightText>
+      </Copyright>
+    </Section>
+  );
+};
 
 export default Footer;
