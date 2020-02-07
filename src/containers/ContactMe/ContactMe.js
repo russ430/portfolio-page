@@ -162,15 +162,74 @@ const ContactMe = () => {
       <Content>
         {/* {form}
         {isLoading} */}
-        <Form name="contact" method="POST" data-netlify="true">
-          <Label Htmlfor="name">Name</Label>
-          <Input type="text" id="name" />
-          <Label Htmlfor="email">Email</Label>
-          <Input type="email" name="email" id="email" />
-          <Label Htmlfor="message">Message</Label>
-          <TextArea id="message" />
-          <Button type="submit">Submit</Button>
-        </Form>
+        <form
+          style={{
+            maxWidth: '50rem',
+            margin: '2rem auto',
+            padding: '2rem 1.5rem',
+            backgroundColor: '#fff',
+            display: 'flex',
+            flexDirection: 'column',
+            borderRadius: '0.3rem',
+          }}
+          name="contact"
+          method="post"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p>
+            <label style={{ fontSize: '2rem', margin: '1rem 0 0.2rem 0' }}>
+              Your Name:{' '}
+              <input
+                style={{
+                  width: '90%',
+                  backgroundColor: '#eee',
+                  padding: '0.5rem 1rem',
+                  fontSize: '2rem',
+                  margin: '0 0 1rem 0',
+                  border: '1px solid grey',
+                }}
+                type="text"
+                name="name"
+              />
+            </label>
+          </p>
+          <p>
+            <label style={{ fontSize: '2rem', margin: '1rem 0 0.2rem 0' }}>
+              Your Email:{' '}
+              <input
+                style={{
+                  width: '90%',
+                  backgroundColor: '#eee',
+                  padding: '0.5rem 1rem',
+                  fontSize: '2rem',
+                  margin: '0 0 1rem 0',
+                  border: '1px solid grey',
+                }}
+                type="email"
+                name="email"
+              />
+            </label>
+          </p>
+          <p>
+            <label style={{ fontSize: '2rem', margin: '1rem 0 0.2rem 0' }}>
+              Message:{' '}
+              <textarea
+                style={{
+                  width: '90%',
+                  backgroundColor: '#eee',
+                  padding: '0.5rem 1rem',
+                  fontSize: '2rem',
+                  margin: '0 0 1rem 0',
+                  border: '1px solid grey',
+                }}
+                name="message"
+              />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
       </Content>
     </>
   );
