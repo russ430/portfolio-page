@@ -20,7 +20,7 @@ const Heading = styled.h2`
   text-shadow: ${boxShadowSmall};
   margin: 2rem 0;
 
-  @media screen and (min-width: 375px) and (max-width: 1000px) {
+  @media screen and (max-width: 545px) {
     font-size: 3rem;
   }
 `;

@@ -11,7 +11,7 @@ const Content = styled.div`
   overflow: hidden;
   padding: 5rem 0;
 
-  @media screen and (min-width: 375px) and (max-width: 1000px) {
+  @media screen and (max-width: 545px) {
     padding: 0;
   }
 `;
@@ -26,9 +26,9 @@ const Form = styled.form`
   border-radius: 0.3rem;
   box-shadow: ${boxShadowSmall};
 
-  @media screen and (min-width: 375px) and (max-width: 1000px) {
+  @media screen and (max-width: 545px) {
     border-radius: 0;
-    margin: 0;
+    margin: 0 auto;
     box-shadow: none;
   }
 `;

@@ -22,7 +22,7 @@ const SVG = styled.div`
   align-items: center;
   margin: 0 1.5rem;
 
-  @media screen and (min-width: 375px) and (max-width: 1000px) {
+  @media screen and (max-width: 545px) {
     margin: 0.5rem 1.5rem;
   }
 `;

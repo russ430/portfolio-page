@@ -6,8 +6,6 @@ import * as colors from '../../UI/colors/colors';
 const Nav = styled.div`
   padding: 1rem;
   background-color: ${colors.primary};
-  display: block;
-  text-align: center;
 `;
 
 const NavList = styled.ul`
@@ -32,7 +30,7 @@ const NavItem = styled.li`
     }
   }
 
-  @media screen and (min-width: 375px) and (max-width: 1000px) {
+  @media screen and (max-width: 545px) {
     font-size: 1.5rem;
   }
 `;

@@ -40,7 +40,7 @@ const NavItem = styled(Link)`
     text-decoration: underline;
   }
 
-  @media screen and (min-width: 375px) and (max-width: 1000px) {
+  @media screen and (max-width: 545px) {
     font-size: 1.5rem;
   }
 `;

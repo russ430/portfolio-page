@@ -12,7 +12,7 @@ const Section = styled.div`
   align-items: center;
   padding: 7rem 0 13rem 0;
 
-  @media screen and (min-width: 375px) and (max-width: 1000px) {
+  @media screen and (max-width: 545px) {
     padding: 4rem 0 6rem 0;
   }
 `;
@@ -25,7 +25,7 @@ const HeaderBox = styled.div`
   margin: 6rem 0;
   text-align: center;
 
-  @media screen and (min-width: 375px) and (max-width: 1000px) {
+  @media screen and (max-width: 545px) {
     margin: 2rem 0;
   }
 `;
@@ -40,7 +40,7 @@ const Title = styled.h1`
   letter-spacing: 0.1rem;
   margin: 2rem 0;
 
-  @media screen and (min-width: 375px) and (max-width: 1000px) {
+  @media screen and (max-width: 545px) {
     font-size: 5rem;
   }
 `;

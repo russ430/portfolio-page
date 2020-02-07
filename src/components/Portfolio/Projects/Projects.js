@@ -11,7 +11,7 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 5rem 0;
 
-  @media screen and (min-width: 375px) and (max-width: 1000px) {
+  @media screen and (max-width: 545px) {
     padding: 2rem 0;
   }
 `;
@@ -25,7 +25,7 @@ const Project = styled.div`
     border-bottom: 2px solid #eee;
   }
 
-  @media screen and (min-width: 375px) and (max-width: 1000px) {
+  @media screen and (max-width: 545px) {
     flex-direction: column;
   }
 `;

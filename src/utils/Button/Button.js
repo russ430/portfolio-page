@@ -19,7 +19,7 @@ const Btn = styled.button`
     color: ${colors.white};
   }
 
-  @media screen and (min-width: 375px) and (max-width: 1000px) {
+  @media screen and (max-width: 545px) {
     margin: 2rem 0;
   }
 `;

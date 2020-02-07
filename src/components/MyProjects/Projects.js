@@ -9,7 +9,7 @@ const Section = styled.section`
   padding-bottom: 8rem;
   margin: 0;
 
-  @media screen and (min-width: 375px) and (max-width: 1000px) {
+  @media screen and (max-width: 545px) {
     background-color: ${colors.greyLight};
   }
 `;
