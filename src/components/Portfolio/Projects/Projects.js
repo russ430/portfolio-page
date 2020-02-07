@@ -10,6 +10,10 @@ const Container = styled.div`
   flex-direction: column;
   margin: 0 auto;
   padding: 5rem 0;
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    padding: 2rem 0;
+  }
 `;
 
 const Project = styled.div`
@@ -19,6 +23,10 @@ const Project = styled.div`
 
   &:not(:last-child) {
     border-bottom: 2px solid #eee;
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    flex-direction: column;
   }
 `;
 

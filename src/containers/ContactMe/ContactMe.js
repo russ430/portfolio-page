@@ -10,6 +10,10 @@ const Content = styled.div`
   background-color: ${colors.white};
   overflow: hidden;
   padding: 5rem 0;
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    padding: 0;
+  }
 `;
 
 const Form = styled.form`
@@ -21,6 +25,12 @@ const Form = styled.form`
   flex-direction: column;
   border-radius: 0.3rem;
   box-shadow: ${boxShadowSmall};
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+  }
 `;
 
 const FormSubmitted = styled(Form)`

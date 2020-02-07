@@ -5,6 +5,10 @@ import * as colors from '../../UI/colors/colors';
 const Header = styled.header`
   padding: 13rem 0 11rem 0;
   background-color: ${colors.primary};
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    padding: 4rem 1rem;
+  }
 `;
 
 const Heading = styled.h1`
@@ -13,6 +17,10 @@ const Heading = styled.h1`
   font-size: 7rem;
   color: ${colors.white};
   text-align: center;
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    font-size: 5rem;
+  }
 `;
 
 const SubHeading = styled.h2`
@@ -21,6 +29,10 @@ const SubHeading = styled.h2`
   font-weight: 400;
   text-align: center;
   font-style: italic;
+
+  @media screen and (min-width: 375px) and (max-width: 1000px) {
+    font-size: 1.8rem;
+  }
 `;
 
 const PageHeader = props => (
