@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ProjectBox from './ProjectBox/ProjectBox';
 import * as colors from '../../UI/colors/colors';
+import projectsArr from '../Portfolio/Projects/projectsArr/projectsArr';
 
 const Section = styled.section`
   background-color: ${colors.white};
@@ -29,15 +30,27 @@ const ProjectsContainer = styled.div`
   margin: 0 auto;
 `;
 
-const Projects = () => (
-  <Section>
-    <Header id="portfolio">My Recent Work</Header>
-    <ProjectsContainer>
-      <ProjectBox />
-      <ProjectBox />
-      <ProjectBox />
-    </ProjectsContainer>
-  </Section>
-);
+const Projects = () => {
+  const recent = projectsArr.slice(0, 3);
+
+  return (
+    <Section>
+      <Header id="portfolio">My Recent Work</Header>
+      <ProjectsContainer>
+        {recent.map(p => {
+          return (
+            <ProjectBox
+              title={p.project}
+              link={p.link}
+              img={p.img.src}
+              alt={p.img.alt}
+              caption={p.caption}
+            />
+          );
+        })}
+      </ProjectsContainer>
+    </Section>
+  );
+};
 
 export default Projects;

@@ -56,16 +56,18 @@ const ViewBtn = styled.button`
   cursor: pointer;
 `;
 
-const TopHeader = () => (
+const TopHeader = props => (
   <Container>
     <TopHeaderLeftBox>
       <Avatar />
       <TopHeaderTitlesBox>
         <HeaderUsername>alexRussian</HeaderUsername>
-        <ProjectTitle>Calculator</ProjectTitle>
+        <ProjectTitle>{props.title}</ProjectTitle>
       </TopHeaderTitlesBox>
     </TopHeaderLeftBox>
-    <ViewBtn>View Project</ViewBtn>
+    <a href={props.link} rel="noreferrer noopener" target="_blank">
+      <ViewBtn>View Project</ViewBtn>
+    </a>
   </Container>
 );
 

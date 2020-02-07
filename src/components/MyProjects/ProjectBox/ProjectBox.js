@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import project from '../../../assets/img/fake-proj-img.png';
 import { boxShadowSmall } from '../../../UI/boxShadow/boxShadow';
 import TopHeader from './TopHeader/TopHeader';
 import SocialButtons from './SocialButtons/SocialButtons';
@@ -35,14 +34,14 @@ const Caption = styled.p`
   display: inline-block;
 `;
 
-const ProjectBox = () => (
+const ProjectBox = props => (
   <Box>
-    <TopHeader />
-    <Img src={project} alt="Project A" />
+    <TopHeader title={props.title} link={props.link} />
+    <Img src={props.img} alt={props.alt} />
     <SocialButtons />
     <Caption>
-      <CaptionUsername>alexRussian</CaptionUsername>A functional calculator emulator identical to
-      the native iPhone calculator. Flip it to landscape mode to see the additional functions!
+      <CaptionUsername>alexRussian</CaptionUsername>
+      {props.caption}
     </Caption>
   </Box>
 );

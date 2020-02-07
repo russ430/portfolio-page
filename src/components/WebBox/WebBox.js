@@ -11,7 +11,7 @@ const Section = styled.div`
   background-color: ${colors.white};
   position: relative;
 
-  @media screen and (max-width: 545px) {
+  @media screen and (max-width: 750px) {
     padding: 0;
   }
 `;
@@ -27,7 +27,7 @@ const DevBox = styled.div`
   margin-top: -12rem;
   box-shadow: ${boxShadowSmall};
 
-  @media screen and (max-width: 545px) {
+  @media screen and (max-width: 750px) {
     margin-top: 0;
     box-shadow: none;
     border-radius: 0;
@@ -39,7 +39,7 @@ const DevBoxTop = styled.div`
   display: flex;
   border-bottom: 1px solid #eee;
 
-  @media screen and (max-width: 545px) {
+  @media screen and (max-width: 750px) {
     flex-direction: column;
   }
 `;
@@ -48,7 +48,7 @@ const DevBoxBottom = styled.div`
   text-align: center;
   padding: 4rem 1rem;
 
-  @media screen and (max-width: 545px) {
+  @media screen and (max-width: 750px) {
     border-bottom: 1px solid #eee;
   }
 `;
@@ -64,7 +64,7 @@ const Card = styled.div`
     border-right: 1px solid #eee;
   }
 
-  @media screen and (max-width: 545px) {
+  @media screen and (max-width: 750px) {
     padding: 2rem;
 
     &:not(:last-child) {
@@ -79,7 +79,7 @@ const Heading = styled.h3`
   letter-spacing: 0.1rem;
   margin-bottom: 2rem;
 
-  @media screen and (max-width: 545px) {
+  @media screen and (max-width: 750px) {
     font-size: 2.5rem;
   }
 `;
@@ -90,7 +90,7 @@ const CardBody = styled.p`
   letter-spacing: 0.03rem;
   margin: 1rem 0;
 
-  @media screen and (max-width: 545px) {
+  @media screen and (max-width: 750px) {
     font-size: 1.5rem;
   }
 `;
@@ -101,7 +101,7 @@ const CardSubHeading = styled.h4`
   margin-bottom: 0.5rem;
   color: ${colors.primary};
 
-  @media screen and (max-width: 545px) {
+  @media screen and (max-width: 750px) {
     font-size: 1.9rem;
   }
 `;

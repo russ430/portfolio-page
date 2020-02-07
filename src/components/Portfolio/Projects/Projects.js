@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import * as colors from '../../../UI/colors/colors';
 import projectsArr from './projectsArr/projectsArr';
 import StyledSVG from '../../../utils/StyledSVG/StyledSVG';
+import Button from '../../../utils/Button/Button';
 
 const Container = styled.div`
   max-width: 120rem;
@@ -11,7 +12,7 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 5rem 0;
 
-  @media screen and (max-width: 545px) {
+  @media screen and (max-width: 800px) {
     padding: 2rem 0;
   }
 `;
@@ -25,7 +26,7 @@ const Project = styled.div`
     border-bottom: 2px solid #eee;
   }
 
-  @media screen and (max-width: 545px) {
+  @media screen and (max-width: 800px) {
     flex-direction: column;
   }
 `;
@@ -36,6 +37,10 @@ const Left = styled.div`
 
 const Figure = styled.figure`
   padding: 2rem;
+
+  @media screen and (max-width: 800px) {
+    padding: 1rem 2rem;
+  }
 `;
 
 const Img = styled.img`
@@ -48,21 +53,37 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: space-around;
   padding: 2rem;
+
+  @media screen and (max-width: 800px) {
+    padding: 1rem 2rem;
+  }
 `;
 
 const Heading = styled.h1`
   font-size: 2.5rem;
   font-weight: 500;
   color: ${colors.primary};
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 2rem;
+  }
 `;
 
 const Description = styled.p`
   font-size: 1.5rem;
   color: ${colors.black};
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 2rem;
+  }
 `;
 
 const SkillsList = styled.ul`
   list-style: none;
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 2rem;
+  }
 `;
 
 const Skill = styled.li`
@@ -70,23 +91,6 @@ const Skill = styled.li`
   display: flex;
   align-items: center;
   margin: 1.5rem 0;
-`;
-
-const Button = styled.button`
-  font-size: 1.5rem;
-  background-color: ${colors.primary};
-  border: 1px solid ${colors.primary};
-  border-radius: 3rem;
-  color: ${colors.white};
-  padding: 1rem 2rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: ${colors.white};
-    transform: scale(1.1);
-    color: ${colors.primary};
-  }
 `;
 
 const Projects = () => (
@@ -113,7 +117,7 @@ const Projects = () => (
               })}
             </SkillsList>
             <a href={p.link} target="_blank" rel="noreferrer noopener">
-              <Button>See it live</Button>
+              <Button color="primary" size="small">See it live</Button>
             </a>
           </Right>
         </Project>

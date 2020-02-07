@@ -6,7 +6,7 @@ const Header = styled.header`
   padding: 13rem 0 11rem 0;
   background-color: ${colors.primary};
 
-  @media screen and (min-width: 375px) and (max-width: 1000px) {
+  @media screen and (max-width: 545px) {
     padding: 4rem 1rem;
   }
 `;
@@ -18,7 +18,7 @@ const Heading = styled.h1`
   color: ${colors.white};
   text-align: center;
 
-  @media screen and (min-width: 375px) and (max-width: 1000px) {
+  @media screen and (max-width: 545px) {
     font-size: 5rem;
   }
 `;

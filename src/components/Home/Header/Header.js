@@ -10,7 +10,7 @@ const Section = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 7rem 0 13rem 0;
+  padding: 3rem 0 13rem 0;
 
   @media screen and (max-width: 545px) {
     padding: 4rem 0 6rem 0;

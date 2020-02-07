@@ -11,6 +11,8 @@ const projects = [
     },
     description:
       'A multi-page website created and hosted on WordPress. Fully responsive across all devices and cross-browser compatible. Includes email-based contact/message form and Google Maps integration.',
+    caption:
+      "I recently built a website with WordPress for a local mechanic's shop! Fully responsive and complete with a contact form and Google Maps integration.",
     svgs: [
       {
         svg: 'wordpress',
@@ -34,7 +36,9 @@ const projects = [
       alt: 'Basic Weather App project',
     },
     description:
-      "A full-stack single page weather application built with React on the front end and NodeJs on the back end, deployed on Heroku. Weather data is retrieved from OpenWeather's API.",
+      "A full stack single page weather application built with React on the front end and NodeJs on the back end, deployed on Heroku. Weather data is retrieved from OpenWeather's API.",
+    caption:
+      "A full stack weather application built with React and NodeJs. I used OpenWeather's API to fetch all the current and future weather data.",
     svgs: [
       {
         svg: 'nodejs',
@@ -71,6 +75,8 @@ const projects = [
     },
     description:
       'A simple credit card form built with React and Sass, deployed on Netlify. Shows card interactions when the user enters in their info.',
+    caption:
+      'A basic credit card form built with some cool interactions as the user types in their info. Built with React and Sass!',
     svgs: [
       {
         svg: 'react',
