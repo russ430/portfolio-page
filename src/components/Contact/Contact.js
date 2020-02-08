@@ -63,7 +63,7 @@ const Button = styled.button`
 
 const Robot = styled.p`
   font-size: 1.5rem;
-  color: darkred;
+  font-style: italic;
   margin: 1rem 0;
 `;
 
