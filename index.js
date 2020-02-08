@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const router = express.Router();
 const nodemailer = require('nodemailer');
-const creds = require('./config');
 const cors = require('cors');
 
 const app = express();
