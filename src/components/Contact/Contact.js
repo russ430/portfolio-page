@@ -67,6 +67,7 @@ const Contact = () => (
     </PageHeader>
     <Content>
       <Form name="contact" method="post">
+        <input type="hidden" name="form-name" value="contact" />
         <Label Htmlfor="name">Name</Label>
         <Input type="text" id="name" />
         <Label Htmlfor="email">Email</Label>
