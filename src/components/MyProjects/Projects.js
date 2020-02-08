@@ -35,6 +35,9 @@ const ProjectsContainer = styled.div`
 const Projects = () => {
   const recent = projectsArr.slice(0, 3);
 
+  const navClickHandler = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <Section>
       <Header id="portfolio">My Recent Work</Header>
@@ -52,7 +55,7 @@ const Projects = () => {
         })}
       </ProjectsContainer>
       <div style={{ textAlign: 'center', marginTop: '5rem' }}>
-        <Link to="/portfolio">
+        <Link to="/portfolio" onClick={navClickHandler}>
           <Button color="primary">See more of my Work</Button>
         </Link>
       </div>

@@ -62,21 +62,27 @@ const Picture = styled.div`
   background-repeat: no-repeat;
 `;
 
-const Header = () => (
-  <Section>
-    <HeaderBox>
-      <Picture />
-      <HeaderText>
-        <Title>Hi, I'm Alex.</Title>
-        <Tagline>
-          I'm a Front End Developer and Programmer based outside Boston, Massachusetts
-        </Tagline>
-      </HeaderText>
-    </HeaderBox>
-    <Link to="/contact">
-      <Button>Work With Me</Button>
-    </Link>
-  </Section>
-);
+const Header = () => {
+  const navClickHandler = () => {
+    window.scrollTo(0, 0);
+  };
+  return (
+    <Section>
+      <HeaderBox>
+        <Picture />
+        <HeaderText>
+          <Title>Hi, I'm Alex.</Title>
+          <Tagline>
+            I'm a Front End Developer and Programmer based outside Boston, Massachusetts
+          </Tagline>
+        </HeaderText>
+      </HeaderBox>
+      <Link to="/contact" onClick={navClickHandler}>
+        <Button>Work With Me</Button>
+      </Link>
+    </Section>
+  );
+};
+
 
 export default Header;
