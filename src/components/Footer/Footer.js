@@ -89,7 +89,7 @@ const Footer = () => {
         <NavItem to="/portfolio" onClick={navClickHandler}>
           Portfolio
         </NavItem>
-        <NavItem to="contactme" onClick={navClickHandler}>
+        <NavItem to="/contact" onClick={navClickHandler}>
           Contact Me
         </NavItem>
       </NavBar>

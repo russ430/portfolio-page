@@ -47,7 +47,7 @@ const NavBar = () => (
       <NavItem to="/portfolio" activeStyle={{ borderBottom: '1px solid white' }}>
         Portfolio
       </NavItem>
-      <NavItem to="/contactme" activeStyle={{ borderBottom: '1px solid white' }}>
+      <NavItem to="/contact" activeStyle={{ borderBottom: '1px solid white' }}>
         Contact Me
       </NavItem>
     </NavList>

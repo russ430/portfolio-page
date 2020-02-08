@@ -4,7 +4,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
-import ContactMe from './containers/ContactMe/ContactMe';
+import Contact from './components/Contact/Contact';
 import Portfolio from './components/Portfolio/Portfolio';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Switch>
         <Route path="/about" component={About} />
         <Route path="/portfolio" component={Portfolio} />
-        <Route path="/contactme" component={ContactMe} />
+        <Route path="/contact" component={Contact} />
         <Route path="/" component={Home} />
       </Switch>
       <Footer />
