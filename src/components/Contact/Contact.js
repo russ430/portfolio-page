@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import ReCAPTCHA from 'react-google-recaptcha';
 import PageHeader from '../../utils/PageHeader/PageHeader';
 import * as colors from '../../UI/colors/colors';
 import { boxShadowSmall } from '../../UI/boxShadow/boxShadow';
@@ -60,95 +61,44 @@ const Button = styled.button`
   align-self: flex-start;
 `;
 
-const Contact = () => (
-  <>
-    <PageHeader subHeading="I look forward to hearing from you! I'll do my best to get back to you within 48 hours or less.">
-      Contact Me
-    </PageHeader>
-    <Content>
-      <Form action="/" name="contact" method="post">
-        <input type="hidden" name="form-name" value="contact" />
-        <Label Htmlfor="name">Name</Label>
-        <Input type="text" id="name" name="name" />
-        <Label Htmlfor="email">Email</Label>
-        <Input type="email" id="email" name="email" />
-        <Label Htmlfor="message">Message</Label>
-        <TextArea id="message" name="message" />
-        <Button type="submit">Submit</Button>
-      </Form>
-    </Content>
-  </>
-);
+const Robot = styled.p`
+  font-size: 1.5rem;
+  color: darkred;
+  margin: 1rem 0;
+`;
+
+const Contact = () => {
+  const [isHuman, setIsHuman] = useState(false);
+
+  const recaptchaChangeHandler = value => {
+    if (value) {
+      setIsHuman(true);
+    }
+  };
+
+  return (
+    <>
+      <PageHeader subHeading="I look forward to hearing from you! I'll do my best to get back to you within 48 hours or less.">
+        Contact Me
+      </PageHeader>
+      <Content>
+        <Form action="/" name="contact" method="post">
+          <input type="hidden" name="form-name" value="contact" />
+          <Label Htmlfor="name">Name</Label>
+          <Input type="text" id="name" name="name" />
+          <Label Htmlfor="email">Email</Label>
+          <Input type="email" id="email" name="email" />
+          <Label Htmlfor="message">Message</Label>
+          <TextArea id="message" name="message" />
+          <ReCAPTCHA sitekey={process.env.RECAPTCHA_KEY} onChange={recaptchaChangeHandler} />
+          {!isHuman && (
+            <Robot>Please confirm you are not a Robot and a Submit button will appear</Robot>
+          )}
+          {isHuman && <Button type="submit">Submit</Button>}
+        </Form>
+      </Content>
+    </>
+  );
+};
 
 export default Contact;
-
-{
-  /* <form
-          style={{
-            maxWidth: '50rem',
-            margin: '2rem auto',
-            padding: '2rem 1.5rem',
-            backgroundColor: '#fff',
-            display: 'flex',
-            flexDirection: 'column',
-            borderRadius: '0.3rem',
-          }}
-          name="contact"
-          method="post"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label style={{ fontSize: '2rem', margin: '1rem 0 0.2rem 0' }}>
-              Your Name:{' '}
-              <input
-                style={{
-                  width: '90%',
-                  backgroundColor: '#eee',
-                  padding: '0.5rem 1rem',
-                  fontSize: '2rem',
-                  margin: '0 0 1rem 0',
-                  border: '1px solid grey',
-                }}
-                type="text"
-                name="name"
-              />
-            </label>
-          </p>
-          <p>
-            <label style={{ fontSize: '2rem', margin: '1rem 0 0.2rem 0' }}>
-              Your Email:{' '}
-              <input
-                style={{
-                  width: '90%',
-                  backgroundColor: '#eee',
-                  padding: '0.5rem 1rem',
-                  fontSize: '2rem',
-                  margin: '0 0 1rem 0',
-                  border: '1px solid grey',
-                }}
-                type="email"
-                name="email"
-              />
-            </label>
-          </p>
-          <p>
-            <label style={{ fontSize: '2rem', margin: '1rem 0 0.2rem 0' }}>
-              Message:{' '}
-              <textarea
-                style={{
-                  width: '90%',
-                  backgroundColor: '#eee',
-                  padding: '0.5rem 1rem',
-                  fontSize: '2rem',
-                  margin: '0 0 1rem 0',
-                  border: '1px solid grey',
-                }}
-                name="message"
-              />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form> */
-}
