@@ -98,7 +98,7 @@ const ContactMe = () => {
     setLoading(true);
     axios({
       method: 'POST',
-      url: 'http://localhost:3002/send',
+      url: '/send',
       data: {
         name: nameData,
         email: emailData,
