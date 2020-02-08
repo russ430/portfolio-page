@@ -73,7 +73,7 @@ const Header = () => (
         </Tagline>
       </HeaderText>
     </HeaderBox>
-    <Link to="/contactme">
+    <Link to="/contact">
       <Button>Work With Me</Button>
     </Link>
   </Section>

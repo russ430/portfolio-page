@@ -75,7 +75,7 @@ const Footer = () => {
         <a href="http://www.github.com/russ430/" target="_blank" rel="noopener noreferrer">
           <Github size="45" style={{ color: 'white', margin: '0 0.5rem' }} />
         </a>
-        <Link to="/contactme">
+        <Link to="/contact">
           <Email size="45" style={{ color: 'white', margin: '0 0.5rem' }} />
         </Link>
       </Icons>
