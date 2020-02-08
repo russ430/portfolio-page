@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 
 const app = express();
-app.use(express.static(path.join(__dirname, 'client', 'build')));
+app.use(express.static(path.join(__dirname, 'client', 'build', 'static')));
 
 const port = process.env.PORT || 3001;
 
