@@ -69,11 +69,11 @@ const Contact = () => (
       <Form action="/" name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />
         <Label Htmlfor="name">Name</Label>
-        <Input type="text" id="name" />
+        <Input type="text" id="name" name="name" />
         <Label Htmlfor="email">Email</Label>
-        <Input type="email" id="email" />
+        <Input type="email" id="email" name="email" />
         <Label Htmlfor="message">Message</Label>
-        <TextArea id="message" />
+        <TextArea id="message" name="message" />
         <Button type="submit">Submit</Button>
       </Form>
     </Content>
