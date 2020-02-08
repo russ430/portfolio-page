@@ -43,6 +43,7 @@ const Pictures = styled.div`
 const Img = styled.img`
   margin: 1rem;
   padding: 0.5rem;
+  height: auto;
   max-width: 30rem;
 `;
 

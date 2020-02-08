@@ -50,6 +50,10 @@ const Tagline = styled.h2`
   font-weight: 400;
   font-size: 2rem;
   margin: 0;
+
+  @media screen and (max-width: 545px) {
+    padding: 0 1rem;
+  }
 `;
 
 const Picture = styled.div`
