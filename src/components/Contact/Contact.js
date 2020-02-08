@@ -90,7 +90,7 @@ const Contact = () => {
           <Input type="email" id="email" name="email" />
           <Label Htmlfor="message">Message</Label>
           <TextArea id="message" name="message" />
-          <ReCAPTCHA sitekey={process.env.RECAPTCHA_KEY} onChange={recaptchaChangeHandler} />
+          <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_KEY} onChange={recaptchaChangeHandler} />
           {!isHuman && (
             <Robot>Please confirm you are not a Robot and a Submit button will appear</Robot>
           )}
