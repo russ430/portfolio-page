@@ -82,7 +82,7 @@ const Contact = () => {
         Contact Me
       </PageHeader>
       <Content>
-        <Form action="/" name="contact" method="post">
+        <Form action="/" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
           <input type="hidden" name="form-name" value="contact" />
           <Label Htmlfor="name">Name</Label>
           <Input type="text" id="name" name="name" />
@@ -90,7 +90,7 @@ const Contact = () => {
           <Input type="email" id="email" name="email" />
           <Label Htmlfor="message">Message</Label>
           <TextArea id="message" name="message" />
-          <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_KEY} onChange={recaptchaChangeHandler} />
+          <ReCAPTCHA onChange={recaptchaChangeHandler} />
           {!isHuman && (
             <Robot>Please confirm you are not a Robot and a Submit button will appear</Robot>
           )}
