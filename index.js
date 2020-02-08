@@ -62,3 +62,5 @@ router.post('/send', (req, res, next) => {
     }
   });
 });
+
+module.exports = app;
