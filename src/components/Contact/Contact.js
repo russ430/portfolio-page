@@ -82,13 +82,7 @@ const Contact = () => {
         Contact Me
       </PageHeader>
       <Content>
-        <Form
-          action="/"
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
-        >
+        <Form action="/" name="contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
           <Label Htmlfor="name">Name</Label>
           <Input type="text" id="name" name="name" />
