@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import ProjectBox from './ProjectBox/ProjectBox';
 import * as colors from '../../UI/colors/colors';
 import projectsArr from '../Portfolio/Projects/projectsArr/projectsArr';
@@ -51,9 +52,9 @@ const Projects = () => {
         })}
       </ProjectsContainer>
       <div style={{ textAlign: 'center', marginTop: '5rem' }}>
-        <a href="/portfolio" rel="noreferrer noopener">
+        <Link to="/portfolio">
           <Button color="primary">See more of my Work</Button>
-        </a>
+        </Link>
       </div>
     </Section>
   );
