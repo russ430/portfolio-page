@@ -50,6 +50,7 @@ const Projects = () => {
               img={p.img.src}
               alt={p.img.alt}
               caption={p.caption}
+              key={p.instaKey}
             />
           );
         })}

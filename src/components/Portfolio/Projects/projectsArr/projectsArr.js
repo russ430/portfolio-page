@@ -5,6 +5,9 @@ import CCForm from '../../../../assets/img/cc-form-desktop.png';
 const projects = [
   {
     project: 'Vanderveer Motors',
+    key: 'VM',
+    svgKey: 'VMsvg',
+    instaKey: 'vmInsta',
     img: {
       src: Vanderveer,
       alt: 'Vanderveer Motors project',
@@ -12,7 +15,7 @@ const projects = [
     description:
       'A multi-page website created and hosted on WordPress. Fully responsive across all devices and cross-browser compatible. Includes email-based contact/message form and Google Maps integration.',
     caption:
-      "I recently built a website with WordPress for a local mechanic's shop! Fully responsive and complete with a contact form and Google Maps integration.",
+      "A new WordPress website for a local mechanic's shop! Fully responsive and complete with a contact form and Google Maps integration.",
     svgs: [
       {
         svg: 'wordpress',
@@ -31,6 +34,9 @@ const projects = [
   },
   {
     project: 'Weather App',
+    key: 'Weather',
+    svgKey: 'weatherSvg',
+    instaKey: 'weatherInsta',
     img: {
       src: Weather,
       alt: 'Basic Weather App project',
@@ -64,6 +70,9 @@ const projects = [
   },
   {
     project: 'Credit Card Form',
+    key: 'credit',
+    svgKey: 'ccSvg',
+    instaKey: 'ccInsta',
     img: {
       src: CCForm,
       alt: 'Basic Weather App project',

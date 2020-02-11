@@ -7,7 +7,7 @@ import swing from '../../assets/img/swing.png';
 import trophy from '../../assets/img/trophy.png';
 
 const Section = styled.section`
-  padding: 2rem 1.5rem 4rem 1.5rem;
+  padding: 3rem 0;
   background-color: ${colors.white};
 `;
 
@@ -17,7 +17,7 @@ const Box = styled.div`
 `;
 
 const Heading = styled.h2`
-  font-size: 5rem;
+  font-size: 3rem;
   color: ${colors.primary};
   text-shadow: ${boxShadowSmall};
   margin: 2rem 0;
@@ -43,7 +43,7 @@ const Pictures = styled.div`
 const Img = styled.img`
   margin: 1rem;
   padding: 0.5rem;
-  height: auto;
+  max-height: 30rem;
   max-width: 30rem;
 `;
 

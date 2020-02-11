@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import { boxShadowSmall } from '../../../UI/boxShadow/boxShadow';
 import TopHeader from './TopHeader/TopHeader';
 import SocialButtons from './SocialButtons/SocialButtons';
+import StyledSVG from '../../../utils/StyledSVG/StyledSVG';
 
 const Box = styled.div`
   display: flex;
+  padding: 1rem 0;
   border-radius: 0.3rem;
   flex-direction: column;
   width: 40rem;
@@ -34,6 +36,16 @@ const Caption = styled.p`
   display: inline-block;
 `;
 
+const Github = styled.p`
+  font-size: 1.5rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    color: #000;
+  }
+`;
+
 const ProjectBox = props => (
   <Box>
     <TopHeader title={props.title} link={props.link} />
@@ -43,6 +55,12 @@ const ProjectBox = props => (
       <CaptionUsername>alexRussian</CaptionUsername>
       {props.caption}
     </Caption>
+    <Github>
+      <a href={props.link} rel="noreferrer noopener">
+        <StyledSVG svg="github" size="30" />
+        Github repository
+      </a>
+    </Github>
   </Box>
 );
 

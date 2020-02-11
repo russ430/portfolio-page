@@ -10,7 +10,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 5rem 0;
+  padding: 3rem 0;
 
   @media screen and (max-width: 800px) {
     padding: 2rem 0;
@@ -97,7 +97,7 @@ const Projects = () => (
   <Container>
     {projectsArr.map(p => {
       return (
-        <Project>
+        <Project key={p.key}>
           <Left>
             <Figure>
               <Img src={p.img.src} alt={p.img.alt} />
@@ -107,14 +107,12 @@ const Projects = () => (
             <Heading>{p.project}</Heading>
             <Description>{p.description}</Description>
             <SkillsList>
-              {p.svgs.map(s => {
-                return (
-                  <Skill>
-                    <StyledSVG svg={s.svg} color={s.color} size={s.size} />
-                    {s.name}
-                  </Skill>
-                );
-              })}
+              {p.svgs.map(s => (
+                <Skill key={p.svgKey}>
+                  <StyledSVG svg={s.svg} color={s.color} size={s.size} />
+                  {s.name}
+                </Skill>
+              ))}
               {p.github && (
                 <Skill>
                   <StyledSVG svg="github" color="#000" size="30" />
