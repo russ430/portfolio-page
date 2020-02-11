@@ -16,6 +16,7 @@ const Box = styled.div`
   border: 1px solid #e3e3e3;
   overflow: hidden;
   margin: 1rem;
+  align-self: flex-start;
 `;
 
 const CaptionUsername = styled.span`
@@ -55,12 +56,14 @@ const ProjectBox = props => (
       <CaptionUsername>alexRussian</CaptionUsername>
       {props.caption}
     </Caption>
-    <Github>
-      <a href={props.link} rel="noreferrer noopener">
-        <StyledSVG svg="github" size="30" />
-        Github repository
-      </a>
-    </Github>
+    {props.github && (
+      <Github>
+        <a href={props.github} rel="noreferrer noopener">
+          <StyledSVG svg="github" size="30" />
+          Github repository
+        </a>
+      </Github>
+    )}
   </Box>
 );
 

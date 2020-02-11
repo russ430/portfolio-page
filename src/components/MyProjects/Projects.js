@@ -36,6 +36,7 @@ const Projects = () => {
   const recent = projectsArr.slice(0, 3);
 
   const navClickHandler = () => {
+    // eslint-disable-next-line no-undef
     window.scrollTo(0, 0);
   };
   return (
@@ -51,13 +52,14 @@ const Projects = () => {
               alt={p.img.alt}
               caption={p.caption}
               key={p.instaKey}
+              github={p.github}
             />
           );
         })}
       </ProjectsContainer>
       <div style={{ textAlign: 'center', marginTop: '5rem' }}>
         <Link to="/portfolio" onClick={navClickHandler}>
-          <Button color="primary">See more of my Work</Button>
+          <Button color="primary">My Portfolio</Button>
         </Link>
       </div>
     </Section>

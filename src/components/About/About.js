@@ -1,13 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as colors from '../../UI/colors/colors';
-import { boxShadowSmall } from '../../UI/boxShadow/boxShadow';
 import PageHeader from '../../utils/PageHeader/PageHeader';
 import swing from '../../assets/img/swing.png';
 import trophy from '../../assets/img/trophy.png';
 
 const Section = styled.section`
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   background-color: ${colors.white};
 `;
 
@@ -19,7 +18,6 @@ const Box = styled.div`
 const Heading = styled.h2`
   font-size: 3rem;
   color: ${colors.primary};
-  text-shadow: ${boxShadowSmall};
   margin: 2rem 0;
 
   @media screen and (max-width: 545px) {
@@ -35,16 +33,24 @@ const Text = styled.p`
 
 const Pictures = styled.div`
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  margin: 1rem 0;
+  margin: 1rem auto;
+  max-width: 50rem;
+
+  @media screen and (max-width: 545px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Img = styled.img`
   margin: 1rem;
   padding: 0.5rem;
-  max-height: 30rem;
-  max-width: 30rem;
+  width: 60%;
+
+  @media screen and (max-width: 545px) {
+    width: 90%;
+  }
 `;
 
 const About = () => (
