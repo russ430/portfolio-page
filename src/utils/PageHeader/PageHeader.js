@@ -14,12 +14,12 @@ const Header = styled.header`
 const Heading = styled.h1`
   padding: 0;
   margin: 0;
-  font-size: 7rem;
+  font-size: 6rem;
   color: ${colors.white};
   text-align: center;
 
   @media screen and (max-width: 545px) {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 `;
 

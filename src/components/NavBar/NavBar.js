@@ -18,7 +18,7 @@ const NavList = styled.div`
 `;
 
 const NavItem = styled(NavLink)`
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0 1.5rem;
   text-decoration: none;
   color: #fff;
@@ -38,17 +38,17 @@ const NavItem = styled(NavLink)`
 const NavBar = () => (
   <Nav>
     <NavList>
-      <NavItem exact to="/" activeStyle={{ borderBottom: '1px solid white' }}>
+      <NavItem exact to="/" activeStyle={{ borderBottom: '1px solid #fff' }}>
         Home
       </NavItem>
-      <NavItem to="/about" activeStyle={{ borderBottom: '1px solid white' }}>
+      <NavItem to="/about" activeStyle={{ borderBottom: '1px solid #fff' }}>
         About
       </NavItem>
-      <NavItem to="/portfolio" activeStyle={{ borderBottom: '1px solid white' }}>
+      <NavItem to="/portfolio" activeStyle={{ borderBottom: '1px solid #fff' }}>
         Portfolio
       </NavItem>
-      <NavItem to="/contact" activeStyle={{ borderBottom: '1px solid white' }}>
-        Contact Me
+      <NavItem to="/contact" activeStyle={{ borderBottom: '1px solid #fff' }}>
+        Contact
       </NavItem>
     </NavList>
   </Nav>
