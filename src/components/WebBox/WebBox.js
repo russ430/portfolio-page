@@ -98,7 +98,7 @@ const CardBody = styled.p`
 const CardSubHeading = styled.h4`
   font-size: 2.1rem;
   letter-spacing: 0.07rem;
-  margin-bottom: 0.5rem;
+  margin: 1.5rem 0 0.5rem 0;
   color: ${colors.primary};
 
   @media screen and (max-width: 750px) {

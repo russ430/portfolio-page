@@ -91,6 +91,10 @@ const Skill = styled.li`
   display: flex;
   align-items: center;
   margin: 1.5rem 0;
+
+  a {
+    color: ${colors.black};
+  }
 `;
 
 const Projects = () => (
@@ -116,7 +120,7 @@ const Projects = () => (
               {p.github && (
                 <Skill>
                   <StyledSVG svg="github" color="#000" size="30" />
-                  <a href={p.github} rel="noreferrer noopener">
+                  <a href={p.github} target="_blank" rel="noreferrer noopener">
                     Github Repo
                   </a>
                 </Skill>

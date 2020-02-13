@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Npm, ReactLogo, Sass, Wordpress } from 'styled-icons/fa-brands';
 import { Redux, Git, Github, Nodejs } from 'styled-icons/boxicons-logos';
-import { Phonelink } from 'styled-icons/material/Phonelink';
+import { Phonelink as Responsive } from 'styled-icons/material/Phonelink';
 
 const SVGs = {
   npm: Npm,
@@ -12,7 +12,7 @@ const SVGs = {
   redux: Redux,
   git: Git,
   wordpress: Wordpress,
-  responsive: Phonelink,
+  responsive: Responsive,
   nodejs: Nodejs,
 };
 

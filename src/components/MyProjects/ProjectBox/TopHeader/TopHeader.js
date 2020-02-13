@@ -4,7 +4,7 @@ import alex from '../../../../assets/img/me-cut-half.png';
 import * as colors from '../../../../UI/colors/colors';
 
 const Container = styled.div`
-  padding: 1.5rem;
+  padding: 0.5rem 1.5rem 1rem 1.5rem;
   font-size: 1.5rem;
   display: flex;
   justify-content: space-between;

@@ -1,5 +1,6 @@
 import Vanderveer from '../../../../assets/img/vm-desktop.png';
 import Weather from '../../../../assets/img/weather-desktop.png';
+import Portfolio from '../../../../assets/img/portfolio-desktop.jpg';
 import CCForm from '../../../../assets/img/cc-form-desktop.png';
 
 const projects = [
@@ -67,6 +68,36 @@ const projects = [
       },
     ],
     link: 'https://alexs-basic-weather-app.herokuapp.com/',
+  },
+  {
+    project: 'Portfolio Page',
+    key: 'Portfolio',
+    svgKey: 'portfolioSvg',
+    instaKey: 'portfolioInsta',
+    img: {
+      src: Portfolio,
+      alt: 'Portfolio page project',
+    },
+    description:
+      'The portfolio page that you are currently on was built from scratch using React. It is a single page application with a multi-page feel utilizing React Router to render new pages and styled-components for styling.',
+    caption:
+      "A full stack weather application built with React and NodeJs. I used OpenWeather's API to fetch all the current and future weather data.",
+    github: 'https://www.github.com/russ430/portfolio-page',
+    svgs: [
+      {
+        svg: 'react',
+        name: 'React',
+        color: '#62dafd',
+        size: '30',
+      },
+      {
+        svg: 'responsive',
+        name: 'Responsive',
+        color: '#000',
+        size: '30',
+      },
+    ],
+    link: 'https://alexrussian.com/',
   },
   {
     project: 'Credit Card Form',

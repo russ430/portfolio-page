@@ -57,7 +57,7 @@ const Tagline = styled.h2`
 `;
 
 const Picture = styled.div`
-  background-image: url(${alex}), linear-gradient(${colors.primary}, ${colors.primaryDark});
+  background-image: url(${alex}), linear-gradient(${colors.primary}, ${colors.primary});
   height: 15rem;
   width: 15rem;
   border-radius: 100rem;
