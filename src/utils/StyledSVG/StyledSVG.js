@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Npm, ReactLogo, Sass, Wordpress } from 'styled-icons/fa-brands';
-import { Redux, Git, Github, Nodejs } from 'styled-icons/boxicons-logos';
+import { Redux, Git, Github, Nodejs, LinkedinSquare } from 'styled-icons/boxicons-logos';
 import { Phonelink as Responsive } from 'styled-icons/material/Phonelink';
+import { Email } from 'styled-icons/material';
 
 const SVGs = {
   npm: Npm,
@@ -14,6 +15,8 @@ const SVGs = {
   wordpress: Wordpress,
   responsive: Responsive,
   nodejs: Nodejs,
+  linkedIn: LinkedinSquare,
+  email: Email,
 };
 
 const SVG = styled.div`
@@ -36,10 +39,15 @@ const StyledSVG = props => {
   const Styled = styled(SVGs[props.svg])`
     padding: 0;
     color: ${p => p.color};
+    transition: 0.2s ease;
+
+    &:hover {
+      color: ${p => (p.hover ? '#fff' : null)};
+    }
   `;
   return (
     <SVG>
-      <Styled color={props.color} size={props.size} />
+      <Styled color={props.color} size={props.size} hover={props.hover} />
       {props.name && <Name>{props.name}</Name>}
     </SVG>
   );

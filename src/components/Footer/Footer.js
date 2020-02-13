@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Github, LinkedinSquare } from 'styled-icons/boxicons-logos';
-import { Email } from 'styled-icons/material';
 import { Link } from 'react-router-dom';
 import * as colors from '../../UI/colors/colors';
+import SocialIcons from './socialIcons/socialIcons';
 
 const Section = styled.footer`
   padding: 2rem 0;
@@ -29,15 +28,16 @@ const NavBar = styled.ul`
 `;
 
 const NavItem = styled(Link)`
-  color: white;
+  color: grey;
   padding: 0;
   margin: 0 1rem;
   font-size: 1.8rem;
   text-decoration: none;
   cursor: pointer;
+  transition: 0.2s ease;
 
   &:hover {
-    text-decoration: underline;
+    color: #fff;
   }
 
   @media screen and (max-width: 545px) {
@@ -52,7 +52,7 @@ const Copyright = styled.div`
 
 const CopyrightText = styled.p`
   font-size: 1.2rem;
-  color: white;
+  color: grey;
   padding: 0;
   margin: 0;
 `;
@@ -65,19 +65,7 @@ const Footer = () => {
   return (
     <Section>
       <Icons>
-        <a
-          href="http://www.linkedin.com/in/alex-russian-ajr111/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <LinkedinSquare size="45" style={{ color: 'white', margin: '0 0.5rem' }} />
-        </a>
-        <a href="http://www.github.com/russ430/" target="_blank" rel="noopener noreferrer">
-          <Github size="45" style={{ color: 'white', margin: '0 0.5rem' }} />
-        </a>
-        <Link to="/contact">
-          <Email size="45" style={{ color: 'white', margin: '0 0.5rem' }} />
-        </Link>
+        <SocialIcons />
       </Icons>
       <NavBar>
         <NavItem to="/" onClick={navClickHandler}>
