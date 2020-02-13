@@ -81,7 +81,7 @@ const projects = [
     description:
       'The portfolio page that you are currently on was built from scratch using React. It is a single page application with a multi-page feel utilizing React Router to render new pages and styled-components for styling.',
     caption:
-      "A full stack weather application built with React and NodeJs. I used OpenWeather's API to fetch all the current and future weather data.",
+      'My portfolio page was developed as a single page application but has a multi-page feel thanks to the JavaScript library, React.',
     github: 'https://www.github.com/russ430/portfolio-page',
     svgs: [
       {
