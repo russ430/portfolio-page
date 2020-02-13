@@ -79,7 +79,7 @@ const projects = [
       alt: 'Portfolio page project',
     },
     description:
-      'The portfolio page that you are currently on was built from scratch using React. It is a single page application with a multi-page feel utilizing React Router to render new pages and styled-components for styling.',
+      'The portfolio page that you are currently on was built from scratch using React. It is a single page application with a multi-page feel utilizing React Router to render new pages and styled-components for styling. Deployed on Netlify.',
     caption:
       'My portfolio page was developed as a single page application but has a multi-page feel thanks to the JavaScript library, React.',
     github: 'https://www.github.com/russ430/portfolio-page',
