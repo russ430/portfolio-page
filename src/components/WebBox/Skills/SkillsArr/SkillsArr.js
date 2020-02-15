@@ -25,19 +25,9 @@ const skillsArr = [
     name: 'React',
   },
   {
-    skill: 'redux',
-    color: '#764abd',
-    name: 'Redux',
-  },
-  {
     skill: 'sass',
     color: '#f782ac',
     name: 'Sass',
-  },
-  {
-    skill: 'wordpress',
-    color: '#21759a',
-    name: 'Wordpress',
   },
 ];
 

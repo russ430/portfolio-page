@@ -23,7 +23,7 @@ const SVG = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 1.5rem;
+  margin: ${p => (p.margin ? p.margin : '0 1.5rem')};
 
   @media screen and (max-width: 545px) {
     margin: 0.5rem 1.5rem;
@@ -46,7 +46,7 @@ const StyledSVG = props => {
     }
   `;
   return (
-    <SVG>
+    <SVG margin={props.margin}>
       <Styled color={props.color} size={props.size} hover={props.hover} />
       {props.name && <Name>{props.name}</Name>}
     </SVG>

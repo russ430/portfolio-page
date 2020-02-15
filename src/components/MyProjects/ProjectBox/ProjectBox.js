@@ -37,12 +37,19 @@ const Caption = styled.p`
   display: inline-block;
 `;
 
-const Github = styled.p`
+const SVGs = styled.div`
+  display: flex;
+  padding: 0 1.5rem;
+  justify-content: center;
+`;
+
+const Icon = styled.div`
   font-size: 1.5rem;
+  text-align: center;
+  margin: 0 0.5rem;
 
   a {
-    display: flex;
-    align-items: center;
+    text-align: center;
     color: #000;
   }
 `;
@@ -56,14 +63,22 @@ const ProjectBox = props => (
       <CaptionUsername>alexRussian</CaptionUsername>
       {props.caption}
     </Caption>
-    {props.github && (
-      <Github>
-        <a href={props.github} rel="noreferrer noopener">
-          <StyledSVG svg="github" size="30" />
-          Github repository
-        </a>
-      </Github>
-    )}
+    <SVGs>
+      {props.svgs.map(s => (
+        <Icon key={s.svg}>
+          <StyledSVG svg={s.svg} margin="null" color={s.color} size={s.size} />
+          {s.name}
+        </Icon>
+      ))}
+      {props.github && (
+        <Icon>
+          <a href={props.github} rel="noreferrer noopener">
+            <StyledSVG svg="github" margin="null" size="30" />
+            Github
+          </a>
+        </Icon>
+      )}
+    </SVGs>
   </Box>
 );
 

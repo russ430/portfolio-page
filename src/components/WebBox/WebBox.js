@@ -19,7 +19,7 @@ const Section = styled.div`
 const DevBox = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 105rem;
+  max-width: 95rem;
   margin: 0 auto;
   background-color: ${colors.white};
   border-radius: 2rem;

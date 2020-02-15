@@ -53,6 +53,7 @@ const Projects = () => {
               caption={p.caption}
               key={p.instaKey}
               github={p.github}
+              svgs={p.svgs}
             />
           );
         })}
