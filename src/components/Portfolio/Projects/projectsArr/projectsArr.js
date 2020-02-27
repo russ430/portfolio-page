@@ -1,7 +1,6 @@
 import Vanderveer from '../../../../assets/img/vm-desktop.png';
 import Weather from '../../../../assets/img/weather-desktop.png';
 import Portfolio from '../../../../assets/img/portfolio-desktop.jpg';
-import CCForm from '../../../../assets/img/cc-form-desktop.png';
 import WeRun from '../../../../assets/img/we-run-here-desktop.jpg';
 
 const projects = [
@@ -25,12 +24,14 @@ const projects = [
         name: 'NodeJs',
         color: '#395336',
         size: '30',
+        key: 'nodeRun',
       },
       {
         svg: 'react',
         name: 'React',
         color: '#62dafd',
         size: '30',
+        key: 'reactRun',
       },
     ],
     link: 'https://we-run-here.netlify.com',
@@ -55,18 +56,21 @@ const projects = [
         name: 'NodeJs',
         color: '#395336',
         size: '30',
+        key: 'nodeWeather',
       },
       {
         svg: 'react',
         name: 'React',
         color: '#62dafd',
         size: '30',
+        key: 'reactWeather',
       },
       {
         svg: 'responsive',
         name: 'Responsive',
         color: '#000',
         size: '30',
+        key: 'responsiveWeather',
       },
     ],
     link: 'https://alexs-basic-weather-app.herokuapp.com/',
@@ -91,12 +95,14 @@ const projects = [
         name: 'React',
         color: '#62dafd',
         size: '30',
+        key: 'reactPortfolio',
       },
       {
         svg: 'responsive',
         name: 'Responsive',
         color: '#000',
         size: '30',
+        key: 'responsivePortfolio',
       },
     ],
     link: 'https://alexrussian.com/',
@@ -120,51 +126,17 @@ const projects = [
         name: 'Wordpress',
         color: '#21759a',
         size: '30',
+        key: 'wordpressVM'
       },
       {
         svg: 'responsive',
         name: 'Responsive',
         color: '#000',
         size: '30',
+        key: 'responsiveVM',
       },
     ],
     link: 'http://www.vanderveermotors.com',
-  },
-  {
-    project: 'Credit Card Form',
-    key: 'credit',
-    svgKey: 'ccSvg',
-    instaKey: 'ccInsta',
-    img: {
-      src: CCForm,
-      alt: 'Basic Weather App project',
-    },
-    description:
-      'A simple credit card form built with React and Sass, deployed on Netlify. Shows card interactions when the user enters in their info.',
-    caption:
-      'A basic credit card form built with some cool interactions as the user types in their info. Built with React and Sass!',
-    github: 'https://github.com/russ430/card-validation',
-    svgs: [
-      {
-        svg: 'react',
-        name: 'React',
-        color: '#62dafd',
-        size: '30',
-      },
-      {
-        svg: 'sass',
-        name: 'Sass',
-        color: '#f782ac',
-        size: '30',
-      },
-      {
-        svg: 'responsive',
-        name: 'Responsive',
-        color: '#000',
-        size: '30',
-      },
-    ],
-    link: 'https://credit-card-form.netlify.com',
   },
 ];
 

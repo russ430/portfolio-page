@@ -112,7 +112,7 @@ const Projects = () => (
             <Description>{p.description}</Description>
             <SkillsList>
               {p.svgs.map(s => (
-                <Skill key={p.svgKey}>
+                <Skill key={s.key}>
                   <StyledSVG svg={s.svg} color={s.color} size={s.size} />
                   {s.name}
                 </Skill>
