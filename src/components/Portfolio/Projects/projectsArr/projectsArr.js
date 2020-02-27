@@ -16,7 +16,7 @@ const projects = [
     description:
       "A full stack CRUD web application built with the MERN stack utilizing GraphQL/Apollo. Users choose an avatar, post/delete their running times, and can comment/like posts. Their profile displays stats and personal bests which are calculated and updated. New posts are displayed in a live feed on users' home page.",
     caption:
-      'A full stack CRUD social network web app for runners built with the MERN stack utilizing GraphQL/Apollo.',
+      'A full stack CRUD social networking web app for runners built with the MERN stack utilizing GraphQL/Apollo.',
     github: 'https://www.github.com/russ430/running-times-app',
     svgs: [
       {
@@ -126,7 +126,7 @@ const projects = [
         name: 'Wordpress',
         color: '#21759a',
         size: '30',
-        key: 'wordpressVM'
+        key: 'wordpressVM',
       },
       {
         svg: 'responsive',
