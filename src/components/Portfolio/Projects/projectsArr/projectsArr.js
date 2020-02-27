@@ -2,36 +2,38 @@ import Vanderveer from '../../../../assets/img/vm-desktop.png';
 import Weather from '../../../../assets/img/weather-desktop.png';
 import Portfolio from '../../../../assets/img/portfolio-desktop.jpg';
 import CCForm from '../../../../assets/img/cc-form-desktop.png';
+import WeRun from '../../../../assets/img/we-run-here-desktop.jpg';
 
 const projects = [
   {
-    project: 'Vanderveer Motors',
-    key: 'VM',
-    svgKey: 'VMsvg',
-    instaKey: 'vmInsta',
+    project: 'We Run Here',
+    key: 'WeRunHere',
+    svgKey: 'weRunHereSVG',
+    instaKey: 'weRunInsta',
     img: {
-      src: Vanderveer,
-      alt: 'Vanderveer Motors project',
+      src: WeRun,
+      alt: 'Basic Weather App project',
     },
     description:
-      'A multi-page website created and hosted on WordPress. Fully responsive across all devices and cross-browser compatible. Includes email-based contact/message form and Google Maps integration.',
+      "A full stack CRUD web application built with the MERN stack utilizing GraphQL/Apollo. Users choose an avatar, post/delete their running times, and can comment/like posts. Their profile displays stats and personal bests which are calculated and updated. New posts are displayed in a live feed on users' home page.",
     caption:
-      "A new WordPress website for a local mechanic's shop! Fully responsive and complete with a contact form and Google Maps integration.",
+      'A full stack CRUD social network web app for runners built with the MERN stack utilizing GraphQL/Apollo.',
+    github: 'https://www.github.com/russ430/running-times-app',
     svgs: [
       {
-        svg: 'wordpress',
-        name: 'Wordpress',
-        color: '#21759a',
+        svg: 'nodejs',
+        name: 'NodeJs',
+        color: '#395336',
         size: '30',
       },
       {
-        svg: 'responsive',
-        name: 'Responsive',
-        color: '#000',
+        svg: 'react',
+        name: 'React',
+        color: '#62dafd',
         size: '30',
       },
     ],
-    link: 'http://www.vanderveermotors.com',
+    link: 'https://we-run-here.netlify.com',
   },
   {
     project: 'Weather App',
@@ -98,6 +100,35 @@ const projects = [
       },
     ],
     link: 'https://alexrussian.com/',
+  },
+  {
+    project: 'Vanderveer Motors',
+    key: 'VM',
+    svgKey: 'VMsvg',
+    instaKey: 'vmInsta',
+    img: {
+      src: Vanderveer,
+      alt: 'Vanderveer Motors project',
+    },
+    description:
+      'A multi-page website created and hosted on WordPress. Fully responsive across all devices and cross-browser compatible. Includes email-based contact/message form and Google Maps integration.',
+    caption:
+      "A new WordPress website for a local mechanic's shop! Fully responsive and complete with a contact form and Google Maps integration.",
+    svgs: [
+      {
+        svg: 'wordpress',
+        name: 'Wordpress',
+        color: '#21759a',
+        size: '30',
+      },
+      {
+        svg: 'responsive',
+        name: 'Responsive',
+        color: '#000',
+        size: '30',
+      },
+    ],
+    link: 'http://www.vanderveermotors.com',
   },
   {
     project: 'Credit Card Form',
