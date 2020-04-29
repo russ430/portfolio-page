@@ -1,4 +1,3 @@
-import Vanderveer from '../../../../assets/img/vm-desktop.png';
 import Weather from '../../../../assets/img/weather-desktop.png';
 import Portfolio from '../../../../assets/img/portfolio-desktop.jpg';
 import WeRun from '../../../../assets/img/we-run-here-desktop.jpg';
@@ -15,7 +14,7 @@ const projects = [
       alt: 'Space Invaders Project',
     },
     description:
-      'I wanted to try my hand at coding up a computer game and decided to recreate the classic Space Invaders game. I developed the game itself entirely with vanilla JavaScript and the HTML canvas. It has 5 levels that progress in difficulty as each level is passed.',
+      "Having always enjoyed video games I wanted to try my hand at coding one up myself. I landed on recreating the classic Space Invaders game and developed it entirely with vanilla JavaScript and the HTML canvas. It has 5 levels that progress in difficulty as each level is passed. By far my favorite project I've developed to date because of how challenging and how satisfying it was to complete.",
     caption:
       'I recreated the classic game Space Invaders using only vanilla JavaScript. See if you can beat all 5 levels!',
     github: 'https://www.github.com/russ430/space-invaders',

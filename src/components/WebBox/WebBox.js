@@ -131,7 +131,7 @@ const WebBox = () => (
             I believe websites must be fast, responsive, and compatible across all devices.
           </CardBody>
           <CardSubHeading>Languages:</CardSubHeading>
-          <CardBody>HTML5, CSS3, Javascript (ES6)</CardBody>
+          <CardBody>HTML5, CSS3, Javascript</CardBody>
         </Card>
       </DevBoxTop>
       <DevBoxBottom>
