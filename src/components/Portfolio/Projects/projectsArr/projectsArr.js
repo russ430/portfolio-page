@@ -2,8 +2,34 @@ import Vanderveer from '../../../../assets/img/vm-desktop.png';
 import Weather from '../../../../assets/img/weather-desktop.png';
 import Portfolio from '../../../../assets/img/portfolio-desktop.jpg';
 import WeRun from '../../../../assets/img/we-run-here-desktop.jpg';
+import Space from '../../../../assets/img/spaceinv-desktop.jpg';
 
 const projects = [
+  {
+    project: 'Space Invaders',
+    key: 'SpaceInvaders',
+    svgKey: 'spaceInvaders',
+    instaKey: 'spaceInvaders',
+    img: {
+      src: Space,
+      alt: 'Space Invaders Project',
+    },
+    description:
+      'I wanted to try my hand at coding up a computer game and decided to recreate the classic Space Invaders game. I developed the game itself entirely with vanilla JavaScript and the HTML canvas. It has 5 levels that progress in difficulty as each level is passed.',
+    caption:
+      'I recreated the classic game Space Invaders using only vanilla JavaScript. See if you can beat all 5 levels!',
+    github: 'https://www.github.com/russ430/space-invaders',
+    svgs: [
+      {
+        svg: 'javascript',
+        name: 'JavaScript',
+        color: '#f7d63d',
+        size: '30',
+        key: 'javascript',
+      },
+    ],
+    link: 'https://classicspaceinvaders.netlify.app',
+  },
   {
     project: 'We Run Here',
     key: 'WeRunHere',
@@ -14,9 +40,9 @@ const projects = [
       alt: 'Basic Weather App project',
     },
     description:
-      "A full stack CRUD web application built with the MERN stack utilizing GraphQL/Apollo. A social networking web app where users choose an avatar, post/delete their running times, and can comment/like posts. Their profile displays stats and personal bests which are calculated and updated. New posts are displayed in a live feed on users' home page.",
+      "A mock social networking web app built for the running community. Users can choose an avatar, post/delete their running times, and can comment/like posts other users' posts. Each profile displays stats and personal bests which are calculated and updated after each new post. Posts from others in the community are displayed in a Twitter-esque live feed on the user's home page.",
     caption:
-      'A full stack CRUD social networking web app for runners built with the MERN stack utilizing GraphQL/Apollo.',
+      'A mock social networking web app for the running community built with React and NodeJS.',
     github: 'https://www.github.com/russ430/running-times-app',
     svgs: [
       {
@@ -46,7 +72,7 @@ const projects = [
       alt: 'Basic Weather App project',
     },
     description:
-      "A full stack single page weather application built with React on the front end and NodeJs on the back end, deployed on Heroku. Weather data is retrieved from OpenWeather's API.",
+      "A full stack single page weather application built with React on the front end and NodeJs on the back end, deployed on Heroku. Weather data is queried from OpenWeather's API.",
     caption:
       "A full stack weather application built with React and NodeJs. I used OpenWeather's API to fetch all the current and future weather data.",
     github: 'https://www.github.com/russ430/basic-weather',
@@ -106,37 +132,6 @@ const projects = [
       },
     ],
     link: 'https://alexrussian.com/',
-  },
-  {
-    project: 'Vanderveer Motors',
-    key: 'VM',
-    svgKey: 'VMsvg',
-    instaKey: 'vmInsta',
-    img: {
-      src: Vanderveer,
-      alt: 'Vanderveer Motors project',
-    },
-    description:
-      'A multi-page website created and hosted on WordPress. Fully responsive across all devices and cross-browser compatible. Includes email-based contact/message form and Google Maps integration.',
-    caption:
-      "A new WordPress website for a local mechanic's shop! Fully responsive and complete with a contact form and Google Maps integration.",
-    svgs: [
-      {
-        svg: 'wordpress',
-        name: 'Wordpress',
-        color: '#21759a',
-        size: '30',
-        key: 'wordpressVM',
-      },
-      {
-        svg: 'responsive',
-        name: 'Responsive',
-        color: '#000',
-        size: '30',
-        key: 'responsiveVM',
-      },
-    ],
-    link: 'http://www.vanderveermotors.com',
   },
 ];
 

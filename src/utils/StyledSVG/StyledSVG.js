@@ -1,7 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Npm, ReactLogo, Sass, Wordpress } from 'styled-icons/fa-brands';
-import { Redux, Git, Github, Nodejs, LinkedinSquare } from 'styled-icons/boxicons-logos';
+import {
+  Redux,
+  Git,
+  Github,
+  Nodejs,
+  Javascript,
+  LinkedinSquare,
+} from 'styled-icons/boxicons-logos';
 import { Phonelink as Responsive } from 'styled-icons/material/Phonelink';
 import { Email } from 'styled-icons/material';
 
@@ -17,6 +24,7 @@ const SVGs = {
   nodejs: Nodejs,
   linkedIn: LinkedinSquare,
   email: Email,
+  javascript: Javascript,
 };
 
 const SVG = styled.div`

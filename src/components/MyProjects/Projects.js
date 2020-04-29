@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+
 import ProjectBox from './ProjectBox/ProjectBox';
 import * as colors from '../../UI/colors/colors';
 import projectsArr from '../Portfolio/Projects/projectsArr/projectsArr';
