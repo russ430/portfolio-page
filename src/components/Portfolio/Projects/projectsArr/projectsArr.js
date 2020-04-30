@@ -1,4 +1,4 @@
-import Weather from '../../../../assets/img/weather-desktop.png';
+import Weather from '../../../../assets/img/weather-desktop.jpg';
 import Portfolio from '../../../../assets/img/portfolio-desktop.jpg';
 import WeRun from '../../../../assets/img/we-run-here-desktop.jpg';
 import Space from '../../../../assets/img/spaceinv-desktop.jpg';
