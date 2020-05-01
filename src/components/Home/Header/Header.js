@@ -76,9 +76,7 @@ const Header = () => {
         <Picture />
         <HeaderText>
           <Title>Hi, I'm Alex.</Title>
-          <Tagline>
-            I'm a Front End Developer and Programmer based outside Boston, Massachusetts
-          </Tagline>
+          <Tagline>I'm a Software Developer based outside Boston, Massachusetts</Tagline>
         </HeaderText>
       </HeaderBox>
       <Link to="/contact" onClick={navClickHandler}>
@@ -87,6 +85,5 @@ const Header = () => {
     </Section>
   );
 };
-
 
 export default Header;

@@ -1,5 +1,10 @@
 const skillsArr = [
   {
+    skill: 'figma',
+    color: '#5551fe',
+    name: 'Figma',
+  },
+  {
     skill: 'git',
     color: '#f54d28',
     name: 'Git',

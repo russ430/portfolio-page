@@ -117,21 +117,22 @@ const WebBox = () => (
       <DevBoxTop>
         <Card>
           <Icon icon={faPencilRuler} size="5x" />
-          <Heading>Web Design</Heading>
+          <Heading>Design</Heading>
           <CardBody>
-            I enjoy creating unique, responsive layouts custom-tailored to your needs.
+            I aim to design software with computer science fundamentals and best practices always in
+            mind.
           </CardBody>
           <CardSubHeading>Things I design:</CardSubHeading>
-          <CardBody>UX, UI, Web, Desktop, Mobile</CardBody>
+          <CardBody>Web and Mobile Sites, Web Apps</CardBody>
         </Card>
         <Card>
           <Icon icon={faCode} size="5x" />
-          <Heading>Web Development</Heading>
+          <Heading>Development</Heading>
           <CardBody>
-            I believe websites must be fast, responsive, and compatible across all devices.
+            As a programmer I'm always striving to write clean, modular, maintainable code.
           </CardBody>
           <CardSubHeading>Languages:</CardSubHeading>
-          <CardBody>HTML5, CSS3, Javascript</CardBody>
+          <CardBody>HTML5, CSS, Javascript</CardBody>
         </Card>
       </DevBoxTop>
       <DevBoxBottom>

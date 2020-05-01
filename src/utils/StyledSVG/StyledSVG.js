@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Npm, ReactLogo, Sass, Wordpress } from 'styled-icons/fa-brands';
 import {
+  Figma,
   Redux,
   Git,
   Github,
@@ -13,18 +14,19 @@ import { Phonelink as Responsive } from 'styled-icons/material/Phonelink';
 import { Email } from 'styled-icons/material';
 
 const SVGs = {
-  npm: Npm,
-  github: Github,
-  react: ReactLogo,
-  sass: Sass,
-  redux: Redux,
-  git: Git,
-  wordpress: Wordpress,
-  responsive: Responsive,
-  nodejs: Nodejs,
-  linkedIn: LinkedinSquare,
   email: Email,
+  figma: Figma,
+  git: Git,
+  github: Github,
   javascript: Javascript,
+  linkedIn: LinkedinSquare,
+  nodejs: Nodejs,
+  npm: Npm,
+  react: ReactLogo,
+  redux: Redux,
+  responsive: Responsive,
+  sass: Sass,
+  wordpress: Wordpress,
 };
 
 const SVG = styled.div`
