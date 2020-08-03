@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Heart } from 'styled-icons/feather';
-import { ReactComponent as Plane } from '../../../../assets/svg/plane.svg';
+import { AiOutlineHeart as Heart } from 'react-icons/ai';
+import { RiSendPlane2Line as Plane } from 'react-icons/ri';
 
 const Container = styled.div`
   display: flex;
@@ -11,16 +11,10 @@ const Container = styled.div`
   margin-top: 0.5rem;
 `;
 
-const PlaneBtn = styled(Plane)`
-  width: 2.8rem;
-  transform: rotate(23deg);
-  margin: 0 0 0.5rem 1rem;
-`;
-
 const SocialButtons = () => (
   <Container>
-    <Heart size="28" />
-    <PlaneBtn />
+    <Heart />
+    <Plane />
   </Container>
 );
 

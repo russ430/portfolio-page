@@ -1,17 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Npm, ReactLogo, Sass, Wordpress } from 'styled-icons/fa-brands';
+import { MdEmail as Email } from 'react-icons/md';
 import {
-  Figma,
-  Redux,
-  Git,
-  Github,
-  Nodejs,
-  Javascript,
-  LinkedinSquare,
-} from 'styled-icons/boxicons-logos';
-import { Phonelink as Responsive } from 'styled-icons/material/Phonelink';
-import { Email } from 'styled-icons/material';
+  FaFigma as Figma,
+  FaNodeJs as Nodejs,
+  FaReact as ReactLogo,
+  FaSass as Sass,
+} from 'react-icons/fa';
+import {
+  DiGitBranch as Git,
+  DiJavascript1 as Javascript,
+  DiNpm as Npm,
+  DiResponsive as Responsive,
+} from 'react-icons/di';
+import { AiFillGithub as Github, AiFillLinkedin as LinkedIn } from 'react-icons/ai';
 
 const SVGs = {
   email: Email,
@@ -19,14 +21,13 @@ const SVGs = {
   git: Git,
   github: Github,
   javascript: Javascript,
-  linkedIn: LinkedinSquare,
+  linkedIn: LinkedIn,
   nodejs: Nodejs,
   npm: Npm,
   react: ReactLogo,
-  redux: Redux,
+  // redux: Redux,
   responsive: Responsive,
   sass: Sass,
-  wordpress: Wordpress,
 };
 
 const SVG = styled.div`
@@ -45,10 +46,10 @@ const Name = styled.p`
   margin: 0.5rem 0;
 `;
 
-const StyledSVG = props => {
-  const Styled = styled(SVGs[props.svg])`
+const StyledSVG = ({ svg, color, margin, size, hover, name }) => {
+  const Styled = styled(SVGs[svg])`
     padding: 0;
-    color: ${p => p.color};
+    color: ${color};
     transition: 0.2s ease;
 
     &:hover {
@@ -56,9 +57,9 @@ const StyledSVG = props => {
     }
   `;
   return (
-    <SVG margin={props.margin}>
-      <Styled color={props.color} size={props.size} hover={props.hover} />
-      {props.name && <Name>{props.name}</Name>}
+    <SVG margin={margin}>
+      <Styled color={color} size={size} hover={hover} />
+      {name && <Name>{name}</Name>}
     </SVG>
   );
 };
