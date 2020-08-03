@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import ProjectBox from './ProjectBox/ProjectBox';
 import * as colors from '../../UI/colors/colors';
-import projectsArr from '../Portfolio/Projects/projectsArr/projectsArr';
+import projects from '../Portfolio/Projects/projects/projects';
 import Button from '../../utils/Button/Button';
 
 const Section = styled.section`
@@ -34,7 +34,7 @@ const ProjectsContainer = styled.div`
 `;
 
 const Projects = () => {
-  const recent = projectsArr.slice(0, 3);
+  const recentProjects = projects.slice(0, 3);
 
   const navClickHandler = () => {
     // eslint-disable-next-line no-undef
@@ -44,15 +44,15 @@ const Projects = () => {
     <Section>
       <Header id="portfolio">My Recent Work</Header>
       <ProjectsContainer>
-        {recent.map(p => {
+        {recentProjects.map(p => {
           return (
             <ProjectBox
-              title={p.project}
+              title={p.title}
               link={p.link}
               img={p.img.src}
               alt={p.img.alt}
               caption={p.caption}
-              key={p.instaKey}
+              key={p.title}
               github={p.github}
               svgs={p.svgs}
             />

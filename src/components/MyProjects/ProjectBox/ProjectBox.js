@@ -65,7 +65,7 @@ const ProjectBox = props => (
     </Caption>
     <SVGs>
       {props.svgs.map(s => (
-        <Icon key={s.svg}>
+        <Icon key={s.key}>
           <StyledSVG svg={s.svg} margin="null" color={s.color} size={s.size} />
           {s.name}
         </Icon>
