@@ -2,20 +2,17 @@
 
 My personal website/portfolio page.
 
-## Find it here
-
-[Live](https://alexrussian.com)
+Find the project [here](https://alexrussian.com)
 
 ## Built With
 
 * [React](http://reactjs.org/)
-* [styled-components](https://styled-components.com/) - Used for styling
-* [Netlify](https://netlify.com) - Used for Hosting
+* [styled-components](https://styled-components.com/)
 
-## Authors
+## Author
 
-* **Alex Russian**
+[Alex Russian](https://github.com/russ430)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License
