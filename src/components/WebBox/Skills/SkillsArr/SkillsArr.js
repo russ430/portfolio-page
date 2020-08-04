@@ -1,18 +1,13 @@
 const skillsArr = [
   {
-    skill: 'figma',
-    color: '#5551fe',
-    name: 'Figma',
+    skill: 'd3',
+    color: '#f9a03c',
+    name: 'd3',
   },
   {
-    skill: 'git',
-    color: '#f54d28',
-    name: 'Git',
-  },
-  {
-    skill: 'github',
-    color: '#000',
-    name: 'Github',
+    skill: 'jest',
+    color: '#C21325',
+    name: 'Jest',
   },
   {
     skill: 'nodejs',
@@ -20,19 +15,14 @@ const skillsArr = [
     name: 'NodeJs',
   },
   {
-    skill: 'npm',
-    color: '#c22127',
-    name: 'npm',
-  },
-  {
     skill: 'react',
     color: '#62dafd',
     name: 'React',
   },
   {
-    skill: 'sass',
-    color: '#f782ac',
-    name: 'Sass',
+    skill: 'redux',
+    color: '#764ABC',
+    name: 'Redux',
   },
 ];
 
