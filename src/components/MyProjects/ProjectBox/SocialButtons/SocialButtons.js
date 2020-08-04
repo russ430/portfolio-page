@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { BsHeart as Heart } from 'react-icons/bs';
+import { BsHeart as Heart, BsHeartFill as HeartFill } from 'react-icons/bs';
 import { RiSendPlaneLine as Plane } from 'react-icons/ri';
 
 const Container = styled.div`
@@ -11,11 +11,27 @@ const Container = styled.div`
   margin-top: 1rem;
 `;
 
-const SocialButtons = () => (
-  <Container>
-    <Heart size="25" style={{ marginRight: '0.5rem' }} />
-    <Plane size="27" />
-  </Container>
-);
+const SocialButtons = () => {
+  const [heartFilled, setHeartFilled] = useState(false);
+
+  return (
+    <Container>
+      {heartFilled ? (
+        <HeartFill
+          onClick={() => setHeartFilled(false)}
+          size="25"
+          style={{ marginRight: '0.5rem', fill: 'red', cursor: 'pointer' }}
+        />
+      ) : (
+        <Heart
+          onClick={() => setHeartFilled(true)}
+          size="25"
+          style={{ marginRight: '0.5rem', cursor: 'pointer' }}
+        />
+      )}
+      <Plane size="27" />
+    </Container>
+  );
+};
 
 export default SocialButtons;
