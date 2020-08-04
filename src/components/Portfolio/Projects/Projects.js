@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as colors from '../../../UI/colors/colors';
-import projectsArr from './projectsArr/projectsArr';
+import projects from './projects/projects';
 import StyledSVG from '../../../utils/StyledSVG/StyledSVG';
 import Button from '../../../utils/Button/Button';
 
@@ -10,7 +10,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 4rem 0;
 
   @media screen and (max-width: 800px) {
     padding: 2rem 0;
@@ -19,7 +19,8 @@ const Container = styled.div`
 
 const Project = styled.div`
   display: flex;
-  padding: 2rem 0;
+  align-items: center;
+  padding: 3rem 0;
   margin-bottom: 2rem 0;
 
   &:not(:last-child) {
@@ -36,7 +37,7 @@ const Left = styled.div`
 `;
 
 const Figure = styled.figure`
-  padding: 2rem;
+  padding: 1rem 2rem 1rem 0;
 
   @media screen and (max-width: 800px) {
     padding: 1rem 2rem;
@@ -49,20 +50,18 @@ const Img = styled.img`
 
 const Right = styled.div`
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 2rem;
+  padding: 0 2rem;
 
   @media screen and (max-width: 800px) {
     padding: 1rem 2rem;
   }
 `;
 
-const Heading = styled.h1`
+const Title = styled.h1`
   font-size: 2.5rem;
   font-weight: 500;
   color: ${colors.primary};
+  margin-bottom: 1rem;
 
   @media screen and (max-width: 800px) {
     margin-bottom: 2rem;
@@ -72,14 +71,12 @@ const Heading = styled.h1`
 const Description = styled.p`
   font-size: 1.5rem;
   color: ${colors.black};
-
-  @media screen and (max-width: 800px) {
-    margin-bottom: 2rem;
-  }
+  margin-bottom: 2rem;
 `;
 
 const SkillsList = styled.ul`
   list-style: none;
+  margin-bottom: 3rem;
 
   @media screen and (max-width: 800px) {
     margin-bottom: 2rem;
@@ -99,16 +96,16 @@ const Skill = styled.li`
 
 const Projects = () => (
   <Container>
-    {projectsArr.map(p => {
+    {projects.map(p => {
       return (
-        <Project key={p.key}>
+        <Project key={p.title}>
           <Left>
             <Figure>
               <Img src={p.img.src} alt={p.img.alt} />
             </Figure>
           </Left>
           <Right>
-            <Heading>{p.project}</Heading>
+            <Title>{p.title}</Title>
             <Description>{p.description}</Description>
             <SkillsList>
               {p.svgs.map(s => (

@@ -31,10 +31,11 @@ const Img = styled.img`
 
 const Caption = styled.p`
   font-size: 1.5rem;
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 0 1.5rem;
   margin: 0.5rem 0 0 0;
   text-align: left;
   display: inline-block;
+  margin: 1rem 0;
 `;
 
 const SVGs = styled.div`
