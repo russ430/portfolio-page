@@ -1,5 +1,5 @@
 import WeRun from '../../../../assets/img/we-run-here-desktop.jpg';
-import Space from '../../../../assets/img/spaceinv-desktop.jpg';
+import Space from '../../../../assets/img/space-invaders.gif';
 import Covid from '../../../../assets/img/covid-tracking.gif';
 
 const projects = [
