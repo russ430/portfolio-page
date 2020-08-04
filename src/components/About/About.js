@@ -61,16 +61,17 @@ const About = () => (
         <Heading>Who I am</Heading>
         <Text>
           My name is Alex. I am a freelance Software Developer based in the Greater Boston Area. I
-          work primarily with JavaScript but am familiar with many different libraries and
-          frameworks, most notably being React.
+          work primarily on the front end side of development but have experience working on full
+          stack applications.
         </Text>
         <Heading>Why Work With Me</Heading>
         <Text>
-          There isn't much more I enjoy than using my creativity to develop and build fast,
-          responsive, user-friendly websites. If come across something I'm unfamiliar with I will
-          turn the internet upside down until I feel comfortable implementing it into my work. I'm
-          always challenging myself to learn and hone my craft so that all of my work is up to
-          today's standards.
+          As a self-taught developer I've had the opportunity to learn everything on my own. As much
+          as this could be viewed as a daunting task I see it as a chance to test my determination
+          and perserverance especially when I hit a roadblock. Through these daily challenges I've
+          been able to hone my ability to overcome obstacles and turn the internet upside down in
+          order learn and solve problems. I'm proud of how far I've come and am excited every day I
+          get to code because I know I'm going to learn something new.
         </Text>
         <Heading>Beyond Development</Heading>
         <Text>
