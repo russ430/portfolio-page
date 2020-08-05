@@ -1,7 +1,7 @@
 const iconsArr = [
   {
     svg: 'linkedIn',
-    link: 'http://www.linkedin.com/in/alex-russian-ajr111/',
+    link: 'http://www.linkedin.com/in/alex-russian/',
   },
   {
     svg: 'github',
