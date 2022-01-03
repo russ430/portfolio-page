@@ -76,7 +76,7 @@ const Header = () => {
         <Picture />
         <HeaderText>
           <Title>Hi, I'm Alex.</Title>
-          <Tagline>I'm a Software Developer based outside Boston, Massachusetts</Tagline>
+          <Tagline>I'm a Software Developer based in San Diego, California</Tagline>
         </HeaderText>
       </HeaderBox>
       <Link to="/contact" onClick={navClickHandler}>
